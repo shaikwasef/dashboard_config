@@ -1,0 +1,217 @@
+[{
+  "id": "AlertsOverview",
+  "category": "Alerts",
+  "description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+  "name": "Alerts Overview",
+  "type": "System",
+  "widgets": [
+    {
+      "layout": {
+        "x": "0",
+        "y": "0",
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByRegulation",
+      "subCategory": [
+        "Laws & Regulations"
+      ]
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": "0",
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByTimePeriod",
+      "subCategory": [
+        "Laws & Regulations",
+        "Bills",
+        "News & Publications"
+      ]
+    },
+    {
+      "layout": {
+        "x": "0",
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "ImplementationStatus",
+      "subCategory": [
+        "Laws & Regulations",
+        "Bills",
+        "News & Publications"
+      ]
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByUsers",
+      "subCategory": [
+        "Laws & Regulations",
+        "Bills",
+        "News & Publications"
+      ]
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByCorpus",
+      "subCategory": [
+        "Laws & Regulations"
+      ]
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByAgency",
+      "subCategory": [
+        "Laws & Regulations",
+        "News & Publications",
+        "Bills"
+      ]
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 6,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "ActiveBillsByJurisdictionAndByStatus",
+      "subCategory": [
+        "Bills"
+      ]
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 6,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByAgencyFeed",
+      "subCategory": [
+        "News & Publications"
+      ]
+    }
+  ],
+  "subCategories": [
+    "Bills",
+    "Laws & Regulations",
+    "News & Publications"
+  ]
+},{
+  "id": "EnforcementActionsOverview",
+  "category": "Enforcement Actions",
+  "description": "Overview of all enforcement actions, including penalties and restitutions, actions by agencies, regulations impacted, and more. ",
+  "name": "Enforcement Actions Overview",
+  "type": "System",
+  "widgets": [
+    {
+      "layout": {
+        "x": "0",
+        "y": "0",
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "EnforcementActionReport"
+    },
+    {
+      "layout": {
+        "x": "0",
+        "y": 1,
+        "w": 12,
+        "h": 2
+      },
+      "widgetId": "NoOfEnforcementActions"
+    },
+    {
+      "layout": {
+        "x": "0",
+        "y": 2,
+        "w": 12,
+        "h": 2
+      },
+      "widgetId": "PenaltiesAndRestitutions"
+    },{
+      "layout": {
+        "x": "0",
+        "y": 3,
+        "w": 12,
+        "h": 3
+      },
+      "widgetId": "ActionsByAgency"
+    },{
+      "layout": {
+        "x": "0",
+        "y": 4,
+        "w": 12,
+        "h": 2
+      },
+      "widgetId": "AuthoritativeDocumentsImpacted"
+    }
+  ]
+},{
+  "id": "ComplianceDashboard",
+  "category": "Compliance",
+  "description": "Overview of all compliance objects, including Risks, Controls, and Tasks.",
+  "name": "Compliance Overview",
+  "type": "System",
+  "widgets": [{
+    "layout": {
+      "x": "0",
+      "y": "0",
+      "w": 6,
+      "h": 2
+    },
+    "widgetId": "RisksByStatus"
+  }, {
+    "layout": {
+      "x": "6",
+      "y": "0",
+      "w": 6,
+      "h": 2
+    },
+    "widgetId": "ControlsByStatus"
+  }, {
+    "layout": {
+      "x": "0",
+      "y": "2",
+      "w": 6,
+      "h": 2
+    },
+    "widgetId": "TasksByStatus"
+  }, {
+    "layout": {
+      "x": "6",
+      "y": "2",
+      "w": 6,
+      "h": 2
+    },
+    "widgetId": "OwnersOfRisksControlsTasks"
+  }, {
+    "layout": {
+      "x": "0",
+      "y": "3",
+      "w": 6,
+      "h": 2
+    },
+    "widgetId": "TasksOverdue"
+  }],
+  "owner": null
+}]
