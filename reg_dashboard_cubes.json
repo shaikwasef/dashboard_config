@@ -1,463 +1,998 @@
 [{
   "id": "AlertsByRegulation",
   "category": "Alerts",
-  "description": "Displays bar chart showing number of alerts by topic.",
-  "dimensions": [
-    "AlertsByTopic.grpName"
+	"name" : "Alerts By Topic",
+	"query" : {
+		"measures": ["AlertsByTopic.totalCount"],
+    "dimensions": ["AlertsByTopic.grpName"],
+    "segments": [],
+    "timeDimensions": [
+      {
+      	"dimension": "AlertsByTopic.publishedDate",
+      	"dateRange": "Last 90 days"
+      }
+    ],
+    "filters": [
+    	{
+        "member":"AlertsByTopic.grpName",
+        "operator": "set"
+      },
+			{
+				"member" : "AlertsByTopic.alertCategory",
+				"operator" :  "equals",
+				"values" : ["Laws & Regulations"]
+			}
+    ],
+		"limit": 10,
+    "order": [["AlertsByTopic.totalCount", "desc"]]
+	},
+	"meta": {
+    "pivotConfig": {
+    "joinDateRange": false,
+    "fillMissingDates": true,
+    "y": ["measures"],
+    "x": ["AlertsByTopic.grpName"]
+  	},
+    "layout": "vertical",
+    "showLegend": false
+  },
+	"langMapping": [
+      {
+        "entity": "AlertsByTopic.totalCount",
+        "langKey": "i18n_LBL_ALERTS_META_GROUPCOUNT"
+      },
+      {
+        "entity": "AlertsByTopic.grpName",
+        "langKey": "i18n_LBL_ALERTS_META_GROUP_NAME"
+      }
   ],
-  "filters": [
-    {
-      "member": "AlertsByTopic.grpName",
-      "operator": "set"
-    }
-  ],
-  "measures": [
-    "AlertsByTopic.totalCount"
-  ],
-  "name": "Alerts by Topic",
-  "segments": [],
-  "timeDimensions": [
-    {
-        "dimension": "AlertsByTopic.publishedDate",
-        "dateRange": "This quarter"
-    }
-  ],
-  "viewTypes": [
-    "bar"
-  ]
+	"applicableFilters" : []
 },{
   "id": "AlertsByTimePeriod",
   "category": "Alerts",
-  "description": "Displays line graph of alerts generated over the last 12 months.",
-  "dimensions": [],
-  "filters": [],
-  "measures": [
-    "RegAlerts.totalCount"
-  ],
   "name": "Alerts by Time Period",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "RegAlerts.publishedDate",
-      "dateRange": "This quarter",
-      "granularity": "month"
-    }
-  ],
-  "viewTypes": [
-    "bar"
-  ]
+	"query": {
+			"measures": ["AlertsCube.totalCount"],
+			"dimensions": [],
+			"segments": [],
+			"timeDimensions": [
+				{
+					"dimension": "AlertsCube.publishedDate",
+					"dateRange": "Last 365 days",
+					"granularity": "month"
+				}
+			],
+			"filters": [],
+			"limit": 1000,
+			"order": [["AlertsCube.publishedDate", "asc"]]
+  	},
+	"meta": {
+    "pivotConfig": {
+			"joinDateRange": false,
+			"fillMissingDates": true,
+			"y": ["measures"],
+			"x": ["AlertsCube.publishedDate.month"]
+    },
+    "showLegend": false
+    },
+	"langMapping": [
+      {
+        "entity": "AlertsCube.totalCount",
+        "langKey": "i18n_LBL_ALERTS_TOTAL_COUNT"
+      },
+      {
+        "entity": "AlertsCube.publishedDate",
+        "langKey": "i18n_LBL_ALERTS_PUBLISHED_DATE"
+      }
+    ],
+	"applicableFilters" : [
+		{
+			"id" : "alertCategoryBills",
+			"name" : "Alert category : Bills"
+		},
+		{
+			"id" : "alertCategoryLaws",
+			"name" : "Alert category : Laws & Regulations"
+		},
+		{
+			"id" : "alertCategoryNews",
+			"name" : "Alert category : News & Publications"
+		}
+	]
 },{
   "id": "ImplementationStatus",
   "category": "Alerts",
-  "description": "View alerts by status: Unread, In Process, and Applicable",
-  "dimensions": [],
-  "filters": [],
-  "measures": [
-    "RegAlerts.unread",
-    "RegAlerts.inProcess",
-    "RegAlerts.applicable"
-  ],
   "name": "Implementation Status",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "RegAlerts.publishedDate",
-      "dateRange":  "This quarter",
-      "granularity" : "month"
-    }
-  ],
-  "viewTypes": [
-    "line"
-  ]
+  "query": {
+      "measures": [
+        "AlertsCube.unread",
+        "AlertsCube.inProcess",
+        "AlertsCube.applicable"
+      ],
+      "dimensions": [],
+      "segments": [],
+      "timeDimensions": [
+        {
+          "dimension": "AlertsCube.publishedDate",
+          "dateRange":  "Last 365 days",
+          "granularity" : "month"
+        }
+      ],
+      "filters": [],
+      "limit": 1000,
+      "order": [["AlertsCube.publishedDate", "desc"]]
+  	},
+	"meta": {
+      "pivotConfig": {
+        "joinDateRange": false,
+        "fillMissingDates": true,
+        "y": ["measures"],
+        "x": ["AlertsCube.publishedDate.month"]
+      }
+    },
+	"langMapping": [
+      {
+        "entity": "AlertsCube.unread",
+        "langKey": "i18n_LBL_ALERTS_UNREAD"
+      },
+      {
+        "entity": "AlertsCube.applicable",
+        "langKey": "i18n_LBL_ALERTS_APPLICABLE"
+      },
+      {
+        "entity": "AlertsCube.inProcess",
+        "langKey": "i18n_LBL_ALERTS_IN_PROCESS"
+      },
+      {
+        "entity": "AlertsCube.publishedDate",
+        "langKey": "i18n_LBL_ALERTS_PUBLISHED_DATE"
+      }
+    ],
+	"applicableFilters" : [
+		{
+			"id" : "alertCategoryBills",
+			"name" : "Alert category : Bills"
+		},
+		{
+			"id" : "alertCategoryLaws",
+			"name" : "Alert category : Laws & Regulations"
+		},
+		{
+			"id" : "alertCategoryNews",
+			"name" : "Alert category : News & Publications"
+		}
+	]
 },{
   "id": "AlertsByCorpus",
   "category": "Alerts",
-  "description": "Displays alerts by different legislative and regulatory bodies, including statuses.",
-  "dimensions": [
-    "RegCorpus.corpusName"
-  ],
-  "filters": [
-    "RegCorpus.corpusName"
-  ],
-  "measures": [
-    "RegAlerts.unread",
-    "RegAlerts.inProcess",
-    "RegAlerts.applicable",
-    "RegAlerts.totalCount"
-  ],
   "name": "Alerts by Corpus",
-  "segments": [],
-  "timeDimensions": [
+	"query": {
+      "measures": [
+        "AlertsCube.unread",
+        "AlertsCube.inProcess",
+        "AlertsCube.applicable",
+        "AlertsCube.totalCount"
+      ],
+      "dimensions": [
+        "CorpusCube.corpusName"
+      ],
+      "segments": [],
+      "timeDimensions": [
+        {
+          "dimension": "AlertsCube.publishedDate",
+          "dateRange": "Last 90 days"
+        }
+      ],
+      "filters": [
+        {
+          "operator": "set",
+          "member": "CorpusCube.corpusName"
+        }
+      ],
+      "limit": 1000,
+      "order": [
+        [
+          "AlertsCube.unread",
+          "desc"
+        ],
+        [
+          "AlertsCube.inProcess",
+          "desc"
+        ],
+        [
+          "AlertsCube.applicable",
+          "desc"
+        ],
+        [
+          "AlertsCube.totalCount",
+          "desc"
+        ]
+     ]
+    },
+	"meta": {
+      "pivotConfig": {
+        "x": [
+          "CorpusCube.corpusName"
+        ],
+        "y": [
+          "measures"
+        ],
+        "fillMissingDates": true,
+        "joinDateRange": false
+      }
+  },
+	"langMapping": [
     {
-      "dimension": "RegAlerts.publishedDate",
-      "dateRange": "This quarter"
+      "entity": "AlertsCube.unread",
+      "langKey": "i18n_LBL_ALERTS_UNREAD"
+    },
+    {
+      "entity": "AlertsCube.inProcess",
+      "langKey": "i18n_LBL_ALERTS_IN_PROCESS"
+    },
+    {
+      "entity": "AlertsCube.applicable",
+      "langKey": "i18n_LBL_ALERTS_APPLICABLE"
+    },
+    {
+      "entity": "AlertsCube.totalCount",
+      "langKey": "i18n_LBL_ALERTS_TOTAL_COUNT"
+    },
+    {
+      "entity": "CorpusCube.corpusName",
+      "langKey": "i18n_LBL_CORPUS_NAME"
     }
-  ],
-  "viewTypes": [
-    "table"
   ]
 },{
   "id": "AlertsByAgency",
   "category": "Alerts",
-  "description": "Displays the number of alerts for different government agencies and their workflow status",
-  "dimensions": [
-    "RegAlertsAgencynames.agencyNames"
-  ],
-  "filters": [
-    "RegAlertsAgencynames.agencyNames"
-  ],
-  "measures": [
-    "RegAlerts.unread",
-    "RegAlerts.inProcess",
-    "RegAlerts.applicable",
-    "RegAlerts.totalCount"
-  ],
   "name": "Alerts by Agency",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "RegAlerts.publishedDate",
-      "dateRange": "This quarter"
-    }
-  ],
-  "viewTypes": [
-    "table"
-  ]
+	"query": {
+      "measures": [
+        "AlertsCube.unread",
+        "AlertsCube.inProcess",
+        "AlertsCube.applicable",
+        "AlertsCube.totalCount"
+      ],
+      "timeDimensions": [
+        {
+          "dimension": "AlertsCube.publishedDate",
+          "dateRange": "Last 30 days"
+        }
+      ],
+      "segments": [],
+      "order": [["AlertsCube.totalCount", "desc"]],
+      "filters": [
+        {
+          "member": "AlertAgencyNamesCube.agencyNames",
+          "operator": "set"
+        }
+      ],
+      "dimensions": ["AlertAgencyNamesCube.agencyNames"]
+  	},
+	"meta": {
+      "pivotConfig": {
+        "x": ["AlertAgencyNamesCube.agencyNames"],
+        "y": ["measures"],
+        "fillMissingDates": true,
+        "joinDateRange": false,
+        "limit": 50000
+      }
+    },
+	"langMapping": [
+      {
+        "entity": "AlertsCube.unread",
+        "langKey": "i18n_LBL_ALERTS_UNREAD"
+      },
+      {
+        "entity": "AlertsCube.inProcess",
+        "langKey": "i18n_LBL_ALERTS_IN_PROCESS"
+      },
+      {
+        "entity": "AlertsCube.applicable",
+        "langKey": "i18n_LBL_ALERTS_APPLICABLE"
+      },
+      {
+        "entity": "AlertsCube.totalCount",
+        "langKey": "i18n_LBL_ALERTS_TOTAL_COUNT"
+      },
+      {
+        "entity": "AlertAgencyNamesCube.agencyNames",
+        "langKey": "i18n_LBL_ALERTS_AGENCY_NAMES"
+      }
+    ],
+	"applicableFilters" : [
+		{
+			"id" : "alertCategoryBills",
+			"name" : "Alert category : Bills"
+		},
+		{
+			"id" : "alertCategoryLaws",
+			"name" : "Alert category : Laws & Regulations"
+		},
+		{
+			"id" : "alertCategoryNews",
+			"name" : "Alert category : News & Publications"
+		}
+	]
 },{
   "id": "AlertsByUsers",
   "category": "Alerts",
-  "description": "Displays the number of alerts generated by users and their workflow status",
-  "dimensions": [
-    "users.fullName"
-  ],
-  "filters": [],
-  "measures": [
-    "RegAlerts.unread",
-    "RegAlerts.inProcess",
-    "RegAlerts.applicable",
-    "RegAlerts.totalCount"
-  ],
-  "name": "Alerts by User",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "RegAlerts.publishedDate",
-      "dateRange": "This quarter"
-    }
-  ],
-  "viewTypes": [
-    "table"
-  ]
+  "name": "Alerts by Users",
+	"query": {
+      "measures": [
+        "AlertsCube.unread",
+        "AlertsCube.inProcess",
+        "AlertsCube.applicable",
+        "AlertsCube.totalCount"
+      ],
+      "dimensions": ["Users.fullName"],
+      "segments": [],
+      "timeDimensions": [
+         {
+        "dimension": "AlertsCube.publishedDate",
+        "dateRange": "Last 90 days"
+        }
+      ],
+      "filters": [
+        {
+          "operator": "set",
+          "member": "Users.fullName"
+        }
+      ],
+      "limit": 1000,
+      "order": [["AlertsCube.totalCount", "desc"]]
+    },
+	"meta": {
+      "pivotConfig": {
+        "joinDateRange": false,
+        "fillMissingDates": true,
+        "y": ["measures"],
+        "x": ["Users.fullName"]
+      }
+    },
+	"langMapping": [
+			{
+				"langKey": "i18n_LBL_ALERTS_UNREAD",
+				"entity": "AlertsCube.unread"
+			},
+			{
+				"langKey": "i18n_LBL_ALERTS_APPLICABLE",
+				"entity": "AlertsCube.applicable"
+			},
+			{
+				"langKey": "i18n_LBL_ALERTS_TOTAL_COUNT",
+				"entity": "AlertsCube.totalCount"
+			},
+			{
+				"langKey": "i18n_LBL_ALERTS_IN_PROCESS",
+				"entity": "AlertsCube.inProcess"
+			},
+			{
+				"langKey": "i18n_LBL_USERS_FULL_NAME",
+				"entity": "Users.fullName"
+			}
+  	],
+	"applicableFilters" : [
+		{
+			"id" : "alertCategoryBills",
+			"name" : "Alert category : Bills"
+		},
+		{
+			"id" : "alertCategoryLaws",
+			"name" : "Alert category : Laws & Regulations"
+		},
+		{
+			"id" : "alertCategoryNews",
+			"name" : "Alert category : News & Publications"
+		}
+	]
 },{
   "id": "AlertsByAgencyFeed",
   "category": "Alerts",
-  "description": "Displays the number of feeds per jurisdiction for the latest 4 quarters",
-  "dimensions": ["RegAlerts.feedName","RegJurisdictions.displayName"],
-  "filters": [
-    {
-    "operator": "set",
-    "member": "RegAlerts.feedName"
-    }
-  ],
-  "measures": ["RegAlerts.feedCount"],
   "name": "Feed Per Jurisdiction",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "RegAlerts.publishedDate",
-      "granularity": "quarter",
-      "dateRange": "Last 4 quarters"
-    }
-  ],
-  "viewTypes": [
-    "table"
-  ]
+	"query": {
+      "measures": ["AlertsCube.feedCount"],
+      "dimensions": ["AlertsCube.feedName","JurisdictionsCube.displayName"],
+      "segments": [],
+      "timeDimensions":[
+        {
+          "dimension": "AlertsCube.publishedDate",
+          "granularity": "quarter",
+          "dateRange": "Last 4 quarters"
+        }
+      ],
+      "filters": [
+        {
+          "operator": "set",
+          "member": "AlertsCube.feedName"
+        },
+        {
+          "operator": "set",
+          "member": "JurisdictionsCube.displayName"
+        }
+      ],
+      "limit": 1000,
+      "order": [["AlertsCube.feedCount", "desc"]]
+    },
+	"meta": {
+      "pivotConfig": {
+        "joinDateRange": false,
+        "fillMissingDates": true,
+        "y": ["JurisdictionsCube.displayName","AlertsCube.feedName"],
+        "x": ["AlertsCube.publishedDate.quarter"]
+      },
+      "widgetType": "quarterly"
+    },
+	"langMapping": [
+      {
+        "langKey": "i18n_LBL_ALERTS_FEED_NAME",
+        "entity": "AlertsCube.feedName"
+      },
+      {
+        "langKey": "i18n_LBL_ALERTS_JURISDICTION_NAME",
+        "entity": "JurisdictionsCube.displayName"
+      }
+    ],
+	"applicableFilters" : []
 },{
   "id": "AlertRulePerJurisdiction",
   "category": "Alerts",
-  "description": "Displays the number of Alert rules per jurisdiction for the latest 4 quarters",
-  "dimensions": ["RegJurisdictions.displayName","RegAlerts.alertType"],
-  "filters": [
-    {
-      "operator": "set",
-      "member": "RegAlerts.alertType"
-    }
-  ],
-  "measures": ["RegAlerts.totalCount"],
   "name": "Alert Rule per Jurisdiction",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "RegAlerts.publishedDate",
-      "granularity": "quarter",
-      "dateRange": "Last 4 quarters"
-    }
-  ],
-  "viewTypes": [
-    "table"
-  ]
+	"query": {
+      "measures": ["AlertsCube.totalCount"],
+      "dimensions": ["AlertsCube.alertType","JurisdictionsCube.displayName"],
+      "segments": [],
+      "timeDimensions":[
+        {
+          "dimension": "AlertsCube.publishedDate",
+          "granularity": "quarter",
+          "dateRange": "Last 4 quarters"
+        }
+      ],
+      "filters": [
+        {
+          "operator": "set",
+          "member": "AlertsCube.alertType"
+        }
+      ],
+      "limit": 1000,
+      "order": [["AlertsCube.totalCount", "desc"]]
+  	},
+	"meta": {
+      "pivotConfig": {
+        "joinDateRange": false,
+        "fillMissingDates": true,
+        "y": ["JurisdictionsCube.displayName","AlertsCube.alertType"],
+        "x": ["AlertsCube.publishedDate.quarter"]
+      },
+      "widgetType": "quarterly"
+    },
+	"langMapping": [
+      {
+        "langKey": "i18n_LBL_ALERTS_ALERT_RULE",
+        "entity": "AlertsCube.alertType"
+      },
+      {
+        "langKey": "i18n_LBL_ALERTS_JURISDICTION_NAME",
+        "entity": "JurisdictionsCube.displayName"
+      }
+    ],
+	"applicableFilters" : []
 },{
   "id": "ActiveBillsByJurisdictionAndByStatus",
   "category": "Alerts",
-  "description": "Displays the number of active bills as per their jurisdiction and status",
-  "dimensions": ["RegJurisdictions.displayName"],
-  "filters": [],
-  "measures": [
-    "RegAlerts.unreadBillsCount",
-    "RegAlerts.applicableBillsCount",
-    "RegAlerts.inProcessBillsCount",
-    "RegAlerts.totalBillsCount"
-  ],
   "name": "Active Bills by Jurisdiction and by Status",
-  "segments": [],
-  "timeDimensions": [
+  "query": {
+      "measures": [
+        "AlertsCube.unreadBillsCount",
+        "AlertsCube.applicableBillsCount",
+        "AlertsCube.inProcessBillsCount",
+        "AlertsCube.totalBillsCount" 
+      ],
+      "dimensions": ["JurisdictionsCube.displayName"],
+      "segments": [],
+      "timeDimensions":[
+         {
+        "dimension": "AlertsCube.publishedDate",
+        "dateRange": "Last 30 days"
+        }
+      ],
+      "filters": [],
+      "limit": 1000,
+      "order": [["AlertsCube.totalBillsCount", "desc"]]
+    },
+  "meta": {
+      "pivotConfig": {
+        "joinDateRange": false,
+        "fillMissingDates": true,
+        "y": ["measures"],
+        "x": ["JurisdictionsCube.displayName"]
+      }
+  },
+	"langMapping": [
     {
-      "dimension": "RegAlerts.publishedDate",
-      "dateRange": "This quarter"
+      "langKey": "i18n_LBL_ALERTS_UNREAD",
+      "entity": "AlertsCube.unreadBillsCount"
+    },
+    {
+      "langKey": "i18n_LBL_ALERTS_TOTAL_COUNT",
+      "entity": "AlertsCube.totalBillsCount"
+    },
+    {
+      "langKey": "i18n_LBL_ALERTS_APPLICABLE",
+      "entity": "AlertsCube.applicableBillsCount"
+    },
+    {
+      "langKey": "i18n_LBL_ALERTS_IN_PROCESS",
+      "entity": "AlertsCube.inProcessBillsCount"
+    },
+    {
+      "langKey": "i18n_LBL_ALERTS_JURISDICTION_NAME",
+      "entity": "JurisdictionsCube.displayName"
     }
   ],
-  "viewTypes": [
-    "table"
-  ]
+	"applicableFilters" : []
 },{
   "id": "EnforcementActionReport",
-  "category": "Enforcement Actions",
-  "description": "Displays the aggregated penalities and count of enforcement actions for various agencies",
-  "dimensions": [
-    "EnforcementActionsReport.agencyNames",
-    "EnforcementActionsReport.currency"
-  ],
-  "filters": ["EnforcementActionsReport.currency","EnforcementActionsReport.agencyNames"],
-  "measures": [
-    "EnforcementActionsReport.count",
-    "EnforcementActionsReport.AggregatedPenalties"
-  ],
+  "category": "Enforcement Actions",  
   "name": "Enforcement Action Report",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "EnforcementActionsReport.effectiveDate",
-      "dateRange": "This quarter"
-    }
-  ],
-  "viewTypes": [
-    "table"
-  ]
+	"query": {
+      "measures": [
+        "EnforcementActionsCube.count",
+        "EnforcementActionsCube.netAmount"
+      ],
+      "dimensions": [
+        "EnforcementActionsAgencyNamesCube.agencyNames",
+        "EnforcementActionsCube.currency"
+      ],
+      "segments": [],
+      "timeDimensions": [
+        {
+          "dimension": "EnforcementActionsCube.effectiveDate",
+          "dateRange": "Last 90 days"
+        }
+      ],
+      "filters": [
+        {
+          "member": "EnforcementActionsCube.currency",
+          "operator": "set"
+        },
+        {
+          "member": "EnforcementActionsAgencyNamesCube.agencyNames",
+          "operator": "set"
+        }
+      ],
+      "limit": 1000,
+      "order": [["EnforcementActionsCube.count" , "desc"]]
+    },
+	"meta": {
+			"pivotConfig": {
+				"x": [
+					"EnforcementActionsCube.currency",
+					"EnforcementActionsCube.netAmount",
+					"EnforcementActionsCube.count"
+				],
+				"y": ["EnforcementActionsAgencyNamesCube.agencyNames"],
+				"fillMissingDates": true,
+				"joinDateRange": false
+			},
+				"widgetType": "aggregations"
+    },
+	"langMapping": [
+    	{
+        "entity": "EnforcementActionsCube.count",
+        "langKey": "i18n_LBL_ENFORCEMENT_ACTIONS_REPORT_COUNT"
+      },
+      {
+        "entity": "EnforcementActionsCube.netAmount",
+        "langKey": "i18n_LBL_ENFORCEMENT_ACTIONS_REPORT_AGGREGATED_PENALTIES"
+      },
+      {
+        "entity": "EnforcementActionsAgencyNamesCube.agencyNames",
+        "langKey": "i18n_LBL_AGENCY"
+      },
+      {
+        "entity": "EnforcementActionsCube.effectiveDate",
+        "langKey": "i18n_LBL_EFFECTIVE_DATE"
+      },
+      {
+        "entity": "EnforcementActionsCube.effectiveDate.quarter",
+        "langKey": "i18n_LBL_EFFECTIVE_DATE"
+      },
+      {
+        "entity": "EnforcementActionsCube.currency",
+        "langKey": "i18n_LBL_CURRENCY"
+      }
+    ]
 },{
   "id": "PenaltiesAndRestitutions",
   "category": "Enforcement Actions",
-  "description": "Displays all the penalties and restitutions amount for enforcement actions for the last 4 quarters",
-  "dimensions": [
-    "PenaltiesAndRestitutions.agencyNames",
-    "PenaltiesAndRestitutions.currency"
-  ],
-  "filters": [
-    "PenaltiesAndRestitutions.currency"
-  ],
-  "measures": [
-    "PenaltiesAndRestitutions.amount"
-  ],
   "name": "Penalties and Restitutions",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "PenaltiesAndRestitutions.effectiveDate",
-      "granularity": "quarter",
-      "dateRange": "Last 4 quarters"
-    }
-  ],
-  "viewTypes": [
-    "table"
-  ]
+	"query": {
+      "measures": ["EnforcementActionsCube.netAmount"],
+      "dimensions": [
+        "EnforcementActionsAgencyNamesCube.agencyNames",
+        "EnforcementActionsCube.currency"
+      ],
+      "segments": [],
+      "timeDimensions": [
+        {
+          "dimension": "EnforcementActionsCube.effectiveDate",
+          "granularity": "quarter",
+          "dateRange": "Last 4 quarters"
+        }
+      ],
+      "filters": [
+        {
+          "member": "EnforcementActionsCube.currency",
+          "operator": "set"
+        }
+      ],
+      "limit": 10000,
+      "order": [["EnforcementActionsCube.netAmount" , "desc"]]
+  	},
+		"meta": {
+      "pivotConfig": {
+        "fillMissingDates": true,
+        "y": ["EnforcementActionsAgencyNamesCube.agencyNames"],
+        "x": [
+          "EnforcementActionsCube.effectiveDate.quarter",
+          "EnforcementActionsCube.currency"
+        ],
+        "limit": 50000
+      },
+      "widgetType": "quarterly"
+    },
+		"langMapping": [
+      {
+        "entity": "EnforcementActionsAgencyNamesCube.agencyNames",
+        "langKey": "i18n_LBL_AGENCY"
+      },
+      {
+        "entity": "EnforcementActionsCube.currency",
+        "langKey": "i18n_LBL_CURRENCY"
+      },
+      {
+        "entity": "EnforcementActionsCube.effectiveDate",
+        "langKey": "i18n_LBL_EFFECTIVE_DATE"
+      }
+    ]
 },{
   "id": "ActionsByAgency",
   "category": "Enforcement Actions",
-  "description": "Displays the number of enforcement actions by an agency and by action type for latest 4 quarters",
-  "measures": [
-      "RegAlertsAgencynamesEnfActions.count"
-    ],
-    "dimensions": [
-      "RegHarmonizedActionType.harmonizedActionType",
-      "RegAlertsAgencynamesEnfActions.agencyNames"
-    ],
-    "segments": [],
-    "timeDimensions": [
-      {
-          "dateRange": "This quarter",
-          "dimension": "RegAlertsEnforcementActions.effectiveDate"
-      }
-    ],
-    "filters": [
-      {
-        "member": "RegHarmonizedActionType.harmonizedActionType",
-        "operator": "set"
+	"name": "Actions By Agency",
+  "query": {
+      "measures": ["EnforcementActionsCube.count"],
+      "dimensions": [
+        "HarmonizedActionTypeCube.harmonizedActionType",
+        "EnforcementActionsAgencyNamesCube.agencyNames"
+      ],
+      "segments": [],
+      "timeDimensions": [
+        {
+          "dateRange": "Last 90 days",
+          "dimension": "EnforcementActionsCube.effectiveDate"
+        }
+      ],
+      "filters": [
+        {
+          "member": "HarmonizedActionTypeCube.harmonizedActionType",
+          "operator": "set"
+        },
+        {
+          "member": "EnforcementActionsAgencyNamesCube.agencyNames",
+          "operator": "set"
+        },
+        {
+          "member": "EnforcementActionsCube.count",
+          "operator": "set"
+        }
+      ],
+      "limit": 10000,
+      "order": [["EnforcementActionsCube.count", "desc"]]
+    },
+	"meta": {
+      "pivotConfig": {
+        "x": ["HarmonizedActionTypeCube.harmonizedActionType"],
+        "y": ["EnforcementActionsAgencyNamesCube.agencyNames"],
+        "fillMissingDates": true
       },
+      "widgetType": "entityMapping"
+    },
+	"langMapping": [
       {
-        "member": "RegAlertsAgencynamesEnfActions.agencyNames",
-        "operator": "set"
-      },
-      {
-        "member": "RegAlertsAgencynamesEnfActions.count",
-        "operator": "set"
+        "entity": "EnforcementActionsAgencyNamesCube.agencyNames",
+        "langKey": "i18n_LBL_AGENCY"
       }
-    ],
-    "limit": 10000,
-    "order": [],
-    "viewTypes": [
-    "table"
     ]
 },{
   "id": "NoOfEnforcementActions",
   "category": "Enforcement Actions",
-  "description":  "Displays the total number of enforcement actions for all agencies for the last 4 quarters",
-  "dimensions": [
-    "EnforcementActionsReport.agencyNames"
-  ],
-  "filters": [
-     {
-       "member": "EnforcementActionsReport.agencyNames",
-       "operator": "set"
-     }
-  ],
-  "measures": [
-    "EnforcementActionsReport.count"
-  ],
   "name": "# of Enforcement Actions",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "EnforcementActionsReport.effectiveDate",
-      "dateRange": "Last 4 quarters",
-      "granularity": "quarter"
-    }
-  ],
-  "viewTypes": [
-    "table"
-  ]
+	"query": {
+      "measures": ["EnforcementActionsCube.count"],
+      "dimensions": ["EnforcementActionsAgencyNamesCube.agencyNames"],
+      "segments": [],
+      "timeDimensions": [
+        {
+          "dimension": "EnforcementActionsCube.effectiveDate",
+          "dateRange": "Last 4 quarters",
+          "granularity": "quarter"
+        }
+      ],
+      "filters": [
+        {
+          "member": "EnforcementActionsAgencyNamesCube.agencyNames",
+          "operator": "set"
+        }
+      ],
+      "limit": 1000,
+      "order": [["EnforcementActionsCube.count", "desc"]]
+    },
+	"meta": {
+      "pivotConfig": {
+        "x": ["EnforcementActionsCube.effectiveDate.quarter"],
+        "y": ["EnforcementActionsAgencyNamesCube.agencyNames"],
+        "fillMissingDates": true,
+        "joinDateRange": false
+      },
+      "widgetType": "quarterly"
+  	},    
+	"langMapping": [
+      {
+        "entity": "EnforcementActionsAgencyNamesCube.agencyNames",
+        "langKey": "i18n_LBL_AGENCY"
+      },
+      {
+        "entity": "EnforcementActionsCube.count",
+        "langKey": "i18n_LBL_ENFORCEMENT_ACTIONS_REPORT_COUNT"
+      },
+      {
+        "entity": "EnforcementActionsCube.effectiveDate",
+        "langKey": "i18n_LBL_EFFECTIVE_DATE"
+      },
+      {
+        "entity": "EnforcementActionsCube.effectiveDate.quarter",
+        "langKey": "i18n_LBL_EFFECTIVE_DATE"
+      }
+    ]
 },{
   "id": "AuthoritativeDocumentsImpacted",
   "category": "Enforcement Actions",
-  "description": "Displays the total number of authoritative documents impacted by enforcement actions for the last 4 quarters",
-  "dimensions": [
-    "RegRegulations.authoritativeDocuments",
-    "RegRegulations.citations"
-  ],
-  "filters": ["RegRegulations.authoritativeDocuments"],
-  "measures": [
-    "RegulationsImpacted.count"
-  ],
   "name": "Authoritative Documents Impacted",
-  "segments": [],
-  "timeDimensions": [
-    {
-      "dimension": "RegulationsImpacted.effectiveDate",
-      "granularity": "quarter",
-      "dateRange": "Last 4 quarters"
-    }
-  ],
-  "viewTypes": [
-    "table"
-  ]
+	"query": {
+			"measures": ["EnforcementActionsCube.count"],
+			"dimensions": [
+					"RegulationsCube.authoritativeDocuments",
+					"RegulationsCube.citations"
+			],
+			"segments": [],
+			"timeDimensions": [
+				{
+					"dimension": "EnforcementActionsCube.effectiveDate",
+					"granularity": "quarter",
+					"dateRange": "Last 4 quarters"
+					}
+				],
+			"filters": [
+					{
+						"member": "RegulationsCube.authoritativeDocuments",
+						"operator": "set"
+					}
+			],
+			"limit": 10000,
+			"order": {}
+    },
+	"meta": {
+    	"pivotConfig": {
+        "x": ["EnforcementActionsCube.effectiveDate.quarter"],
+        "y": [
+          "RegulationsCube.citations",
+          "RegulationsCube.authoritativeDocuments"
+        ],
+        "fillMissingDates": true
+      },
+      "widgetType": "quarterly"
+    },
+	"langMapping":[
+      {
+        "entity": "RegulationsCube.authoritativeDocuments",
+        "langKey": "i18n_LBL_AUTHORITATIVE_DOCUMENTS"
+      },
+      {
+        "entity": "RegulationsCube.citations",
+        "langKey": "i18n_LBL_CITATIONS"
+      }
+    ]
 },{
   "id": "RisksByStatus",
   "category": "Compliance",
-  "description": "Displays Risks by their assigned status.",
-  "dimensions": [
-    "RegRisksByStatus.riskStatus"
-  ],
-  "filters": [],
-  "measures": [
-    "RegMapStatus.count"
-  ],
   "name": "Risks by Status",
-  "segments": [
-    "RegMapStatus.riskType"
-  ],
-  "timeDimensions": [],
-  "viewTypes": [
-    "table",
-    "bar",
-    "pie"
-  ]
+	"query": {
+      "measures": ["MapStatusCube.count"],
+      "dimensions": ["RisksByStatusCube.riskStatus"],
+      "segments": ["MapStatusCube.riskType"],
+      "timeDimensions": [],
+      "filters": [],
+      "limit": 10,
+      "order": [["MapStatusCube.count", "desc"]]
+    },
+	"meta": {
+      "pivotConfig": {
+        "joinDateRange": false,
+        "fillMissingDates": true,
+        "y": ["measures"],
+        "x": ["RisksByStatusCube.riskStatus"]
+      },
+      "layout": "vertical",
+      "allowDecimals": false
+    },
+	"langMapping": [
+      {
+        "entity": "MapStatusCube.count",
+        "langKey": "i18n_LBL_REG_MAP_STATUS_COUNT"
+      },
+      {
+        "entity": "RisksByStatusCube.riskStatus",
+        "langKey": "i18n_LBL_RISKS_STATUS"
+      },
+      {
+        "entity": "MapStatusCube.riskType",
+        "langKey": "i18n_LBL_RISK_TYPE"
+      }
+  	]
 },{
   "id": "ControlsByStatus",
   "category": "Compliance",
-  "description": "Displays Controls by their assigned status.",
-  "dimensions": [
-    "RegControlsBystatus.controlStatus"
-  ],
-  "filters": [],
-  "measures": [
-    "RegMapStatus.count"
-  ],
   "name": "Controls by Status",
-  "segments": [
-    "RegMapStatus.controlType"
-  ],
-  "timeDimensions": [],
-  "viewTypes": [
-    "table",
-    "bar",
-    "pie"
-  ]
+	"query": {
+      "measures": ["MapStatusCube.count"],
+      "dimensions": ["ControlsByStatusCube.controlStatus"],
+      "segments": ["MapStatusCube.controlType"],
+      "timeDimensions": [],
+      "filters": [],
+      "limit": 10,
+      "order": [["MapStatusCube.count", "desc"]]
+    },
+	"meta": {
+      "pivotConfig": {
+        "y": ["measures"],
+        "x": ["ControlsByStatusCube.controlStatus"]
+      },
+      "layout": "vertical",
+      "allowDecimals": false
+    },
+	"langMapping": [
+      {
+        "entity": "MapStatusCube.count",
+        "langKey": "i18n_LBL_REG_MAP_STATUS_COUNT"
+      },
+      {
+        "entity": "ControlsByStatusCube.controlStatus",
+        "langKey": "i18n_LBL_CONTROLS_STATUS"
+      },
+      {
+        "entity": "MapStatusCube.controlType",
+        "langKey": "i18n_LBL_CONTROL_TYPE"
+      }
+    ]
 },{
   "id": "TasksByStatus",
   "category": "Compliance",
-  "description": "Displays Tasks by their assigned status.",
-  "dimensions": [
-    "RegTasksByStatus.taskStatus"
-  ],
-  "filters": [],
-  "measures": [
-    "RegMapStatus.count"
-  ],
   "name": "Tasks by Status",
-  "segments": [
-    "RegMapStatus.taskType"
-  ],
-  "timeDimensions": [],
-  "viewTypes": [
-    "table",
-    "bar",
-    "pie"
-  ]
+	"query": {
+      "measures": ["MapStatusCubeTask.count"],
+      "dimensions": ["MapStatusCubeTask.status"],
+      "timeDimensions": [],
+      "filters": [],
+      "limit": 10,
+      "order": [["MapStatusCubeTask.count", "desc"]]
+  },
+	"meta": {
+      "pivotConfig": {
+        "y": ["measures"],
+        "x": ["MapStatusCubeTask.status"]
+      },
+      "layout": "vertical",
+      "allowDecimals": false
+    },
+	"langMapping": [
+      {
+        "entity": "MapStatusCubeTask.count",
+        "langKey": "i18n_LBL_REG_MAP_STATUS_COUNT"
+      },
+      {
+        "entity": "MapStatusCubeTask.status",
+        "langKey": "i18n_LBL_TASKS_STATUS"
+      }
+    ]
 },{
   "id": "OwnersOfRisksControlsTasks",
   "category": "Compliance",
-  "description": "Shows how many Risks, Controls, and Tasks have been assigned to each user.",
-  "dimensions": [
-    "users.fullName"
-  ],
-  "filters": [{
-      "member": "users.fullName",
-      "operator": "set"
-    }],
-  "measures": [
-    "RegMapOwners.riskCount",
-    "RegMapOwners.controlCount",
-    "RegMapOwners.taskCount",
-    "RegMapOwners.total"
-  ],
-  "name": "Owners of Risks, Controls & Tasks",
-  "timeDimensions": [],
-  "viewTypes": [
-    "table"
-  ]
+	"query": {
+      "measures": [
+        "MapOwnersCube.riskCount",
+        "MapOwnersCube.controlCount",
+        "MapOwnersCube.taskCount",
+        "MapOwnersCube.total"
+      ],
+      "dimensions": ["Users.fullName"],
+      "timeDimensions": [],
+      "filters": [
+        {
+          "member": "Users.fullName",
+          "operator": "set"
+        }
+      ],
+      "limit": 15,
+      "order": [["MapOwnersCube.total", "desc"]]
+  	},
+	"meta": {
+      "pivotConfig": {
+        "y": ["measures"],
+        "x": ["Users.fullName"]
+      },
+      "layout": "vertical"
+  	},
+	"langMapping": [
+      {
+        "entity": "MapOwnersCube.riskCount",
+        "langKey": "i18n_LBL_REG_RISKS_COUNT"
+      },
+      {
+        "entity": "MapOwnersCube.controlCount",
+        "langKey": "i18n_LBL_REG_CONTROLS_COUNT"
+      },
+      {
+        "entity": "MapOwnersCube.taskCount",
+        "langKey": "i18n_LBL_REG_TASKS_COUNT"
+      },
+      {
+        "entity": "Users.fullName",
+        "langKey": "i18n_LBL_USERS_FULL_NAME"
+      },
+      {
+        "entity": "MapOwnersCube.total",
+        "langKey": "i18n_LBL_ALERTS_TOTAL_COUNT"
+      }
+    ]
 },{
   "id": "TasksOverdue",
   "category": "Compliance",
-  "description": "Displays the total number of tasks with their overdue time",
-  "dimensions": [
-    "TasksOverdue.dueDate"
-  ],
-  "filters": [],
-  "measures": [
-    "TasksOverdue.count"
-  ],
   "name": "Tasks Overdue",
-  "timeDimensions": [],
-  "viewTypes": [
-    "table",
-    "bar"
-  ]
+	"query": {
+      "measures": ["TasksCube.count"],
+      "dimensions": ["TasksCube.dueDate"],
+      "segments": [],
+      "timeDimensions": [],
+      "filters": [
+        {
+          "member": "TasksCube.dueDate",
+          "operator": "set"
+        }
+      ],
+      "limit": 10,
+      "order": [["TasksCube.count", "desc"]]
+  },
+	"meta": {
+      "pivotConfig": {
+        "y": ["measures"],
+        "x": ["TasksCube.dueDate"]
+      },
+      "layout": "vertical",
+      "allowDecimals": false,
+      "widgetType": "overdueDate"
+  },
+	"langMapping": [
+      {
+        "entity": "TasksCube.count",
+        "langKey": "i18n_LBL_REG_MAP_STATUS_COUNT"
+      },
+      {
+        "entity": "TasksCube.dueDate",
+        "langKey": "i18n_LBL_DUE_DATE"
+      }
+		]
 }]
+

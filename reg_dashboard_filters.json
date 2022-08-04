@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "62eb5b4efaa36966cb54e576"
+  },
+  "id": "alertCategoryBills",
+  "name": "Alert category : Bills",
+  "filter": {
+    "member": "AlertsCube.alertCategory",
+    "operator": "equals",
+    "values": [
+      "Bills"
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "62eb5b4efaa36966cb54e577"
+  },
+  "id": "alertCategoryLaws",
+  "name": "Alert category : Laws & Regulations",
+  "filter": {
+    "member": "AlertsCube.alertCategory",
+    "operator": "equals",
+    "values": [
+      "Laws & Regulations"
+    ]
+  }
+},{
+  "_id": {
+    "$oid": "62eb5b4efaa36966cb54e578"
+  },
+  "id": "alertCategoryNews",
+  "name": "Alert category : News & Publications",
+  "filter": {
+    "member": "AlertsCube.alertCategory",
+    "operator": "equals",
+    "values": [
+      "News & Publications"
+    ]
+  }
+}]

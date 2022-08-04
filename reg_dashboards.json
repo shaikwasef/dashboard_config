@@ -1,49 +1,36 @@
 [{
-  "id": "AlertsOverview",
+  "id": "Alerts:HorizonScanning",
   "category": "Alerts",
   "description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
-  "name": "Alerts Overview",
+  "name": "Alerts : Horizon Scanning",
   "type": "System",
   "widgets": [
     {
       "layout": {
-        "x": "0",
-        "y": "0",
+        "x": 0,
+        "y": 0,
         "w": 6,
         "h": 2
       },
-      "widgetId": "AlertsByRegulation",
-      "subCategory": [
-        "Laws & Regulations"
-      ]
+      "widgetId": "AlertsbyAgency:HorizonScanning"
     },
     {
       "layout": {
         "x": 6,
-        "y": "0",
+        "y": 0,
         "w": 6,
         "h": 2
       },
-      "widgetId": "AlertsByTimePeriod",
-      "subCategory": [
-        "Laws & Regulations",
-        "Bills",
-        "News & Publications"
-      ]
+      "widgetId": "AlertsByTimePeriod:HorizonScanning"
     },
     {
       "layout": {
-        "x": "0",
+        "x": 0,
         "y": 2,
         "w": 6,
         "h": 2
       },
-      "widgetId": "ImplementationStatus",
-      "subCategory": [
-        "Laws & Regulations",
-        "Bills",
-        "News & Publications"
-      ]
+      "widgetId": "ImplementationStatus:HorizonScanning"
     },
     {
       "layout": {
@@ -52,12 +39,7 @@
         "w": 6,
         "h": 2
       },
-      "widgetId": "AlertsByUsers",
-      "subCategory": [
-        "Laws & Regulations",
-        "Bills",
-        "News & Publications"
-      ]
+      "widgetId": "AlertsByUsers:HorizonScanning"
     },
     {
       "layout": {
@@ -66,56 +48,128 @@
         "w": 6,
         "h": 2
       },
-      "widgetId": "AlertsByCorpus",
-      "subCategory": [
-        "Laws & Regulations"
-      ]
-    },
-    {
-      "layout": {
-        "x": 6,
-        "y": 4,
-        "w": 6,
-        "h": 2
-      },
-      "widgetId": "AlertsByAgency",
-      "subCategory": [
-        "Laws & Regulations",
-        "News & Publications",
-        "Bills"
-      ]
-    },
-    {
-      "layout": {
-        "x": 0,
-        "y": 6,
-        "w": 6,
-        "h": 2
-      },
-      "widgetId": "ActiveBillsByJurisdictionAndByStatus",
-      "subCategory": [
-        "Bills"
-      ]
-    },
-    {
-      "layout": {
-        "x": 6,
-        "y": 6,
-        "w": 6,
-        "h": 2
-      },
-      "widgetId": "AlertsByAgencyFeed",
-      "subCategory": [
-        "News & Publications"
-      ]
+      "widgetId": "ActiveBillsByJurisdictionAndByStatus"
     }
-  ],
-  "subCategories": [
-    "Bills",
-    "Laws & Regulations",
-    "News & Publications"
   ]
-},{
+},
+{
+  "id": "Alerts: Regulatory Changes",
+  "category": "Alerts",
+  "description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+  "name": "Alerts : Regulatory Changes",
+  "type": "System",
+  "widgets": [
+    {
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsbyAgency:Regulatorychanges"
+    },
+		{
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByCorpus"
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByRegulation"
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByTimePeriod:RegulatoryChanges"
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "ImplementationStatus:RegulatoryChanges"
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByUsers:RegulatoryChanges"
+    }
+  ]
+},
+{
+  "id": "Alerts: Agency Updates",
+  "category": "Alerts",
+  "description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+  "name": "Alerts : Agency Updates",
+  "type": "System",
+  "widgets": [
+    {
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByAgency:AgencyUpdates"
+    },
+		{
+      "layout": {
+        "x": 6,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByTimePeriod:AgencyUpdates"
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "ImplementationStatus:AgencyUpdates"
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByUsers:AgencyUpdates"
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": "AlertsByAgencyFeed"
+    }
+  ]
+},
+{
   "id": "EnforcementActionsOverview",
   "category": "Enforcement Actions",
   "description": "Overview of all enforcement actions, including penalties and restitutions, actions by agencies, regulations impacted, and more. ",
@@ -124,8 +178,8 @@
   "widgets": [
     {
       "layout": {
-        "x": "0",
-        "y": "0",
+        "x": 0,
+        "y": 0,
         "w": 6,
         "h": 2
       },
@@ -133,8 +187,8 @@
     },
     {
       "layout": {
-        "x": "0",
-        "y": 1,
+        "x": 0,
+        "y": 2,
         "w": 12,
         "h": 2
       },
@@ -142,24 +196,24 @@
     },
     {
       "layout": {
-        "x": "0",
-        "y": 2,
+        "x": 0,
+        "y": 4,
         "w": 12,
         "h": 2
       },
       "widgetId": "PenaltiesAndRestitutions"
     },{
       "layout": {
-        "x": "0",
-        "y": 3,
+        "x": 0,
+        "y": 6,
         "w": 12,
-        "h": 3
+        "h": 2
       },
       "widgetId": "ActionsByAgency"
     },{
       "layout": {
-        "x": "0",
-        "y": 4,
+        "x": 0,
+        "y": 8,
         "w": 12,
         "h": 2
       },
@@ -174,40 +228,40 @@
   "type": "System",
   "widgets": [{
     "layout": {
-      "x": "0",
-      "y": "0",
+      "x": 0,
+      "y": 0,
       "w": 6,
       "h": 2
     },
     "widgetId": "RisksByStatus"
   }, {
     "layout": {
-      "x": "6",
-      "y": "0",
+      "x": 6,
+      "y": 0,
       "w": 6,
       "h": 2
     },
     "widgetId": "ControlsByStatus"
   }, {
     "layout": {
-      "x": "0",
-      "y": "2",
+      "x": 0,
+      "y": 2,
       "w": 6,
       "h": 2
     },
     "widgetId": "TasksByStatus"
   }, {
     "layout": {
-      "x": "6",
-      "y": "2",
+      "x": 6,
+      "y": 2,
       "w": 6,
       "h": 2
     },
     "widgetId": "OwnersOfRisksControlsTasks"
   }, {
     "layout": {
-      "x": "0",
-      "y": "3",
+      "x": 0,
+      "y": 4,
       "w": 6,
       "h": 2
     },
