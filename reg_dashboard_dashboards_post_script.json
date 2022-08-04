@@ -13,7 +13,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByAgency:HorizonScanning"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e654"
+				}
 			},
 			{
 				"layout": {
@@ -22,7 +24,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByTimePeriod:HorizonScanning"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e64e"
+				}
 			},
 			{
 				"layout": {
@@ -31,7 +35,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ImplementationStatus:HorizonScanning"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e64b"
+				}
 			},
 			{
 				"layout": {
@@ -40,7 +46,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByUsers:HorizonScanning"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e651"
+				}
 			},
 			{
 				"layout": {
@@ -49,9 +57,12 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ActiveBillsByJurisdictionAndByStatus"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e658"
+				}
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a"
 	},
 	{
 		"id": "Alerts: Regulatory Changes",
@@ -67,7 +78,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByAgency:Regulatorychanges"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e655"
+				}
 			},
 			{
 				"layout": {
@@ -76,7 +89,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByCorpus"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e64a"
+				}
 			},
 			{
 				"layout": {
@@ -85,7 +100,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByRegulation"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e649"
+				}
 			},
 			{
 				"layout": {
@@ -94,7 +111,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByTimePeriod:RegulatoryChanges"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e64f"
+				}
 			},
 			{
 				"layout": {
@@ -103,7 +122,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ImplementationStatus:RegulatoryChanges"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e64c"
+				}
 			},
 			{
 				"layout": {
@@ -112,9 +133,12 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByUsers:RegulatoryChanges"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e652"
+				}
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a"
 	},
 	{
 		"id": "Alerts: Agency Updates",
@@ -130,7 +154,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByAgency:AgencyUpdates"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e656"
+				}
 			},
 			{
 				"layout": {
@@ -139,7 +165,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByTimePeriod:AgencyUpdates"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e650"
+				}
 			},
 			{
 				"layout": {
@@ -148,7 +176,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ImplementationStatus:AgencyUpdates"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e64d"
+				}
 			},
 			{
 				"layout": {
@@ -157,7 +187,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByUsers:AgencyUpdates"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e653"
+				}
 			},
 			{
 				"layout": {
@@ -166,9 +198,12 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByAgencyFeed"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e657"
+				}
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a"
 	},
 	{
 		"id": "EnforcementActionsOverview",
@@ -184,7 +219,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "EnforcementActionReport"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e659"
+				}
 			},
 			{
 				"layout": {
@@ -193,7 +230,9 @@
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "NoOfEnforcementActions"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e65c"
+				}
 			},
 			{
 				"layout": {
@@ -202,7 +241,9 @@
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "PenaltiesAndRestitutions"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e65a"
+				}
 			},
 			{
 				"layout": {
@@ -211,7 +252,9 @@
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "ActionsByAgency"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e65b"
+				}
 			},
 			{
 				"layout": {
@@ -220,9 +263,12 @@
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "AuthoritativeDocumentsImpacted"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e65d"
+				}
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a"
 	},
 	{
 		"id": "ComplianceDashboard",
@@ -238,7 +284,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "RisksByStatus"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e65e"
+				}
 			},
 			{
 				"layout": {
@@ -247,7 +295,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ControlsByStatus"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e65f"
+				}
 			},
 			{
 				"layout": {
@@ -256,7 +306,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "TasksByStatus"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e660"
+				}
 			},
 			{
 				"layout": {
@@ -265,7 +317,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "OwnersOfRisksControlsTasks"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e661"
+				}
 			},
 			{
 				"layout": {
@@ -274,8 +328,11 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "TasksOverdue"
+				"widgetId": {
+					"$oid": "62eb8ef2faa36966cb54e662"
+				}
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a"
 	}
 ]
