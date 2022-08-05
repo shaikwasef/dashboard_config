@@ -12,11 +12,17 @@ let updateddashboardsCollection = dashboardsCollection.map((item) => {
 			}
 		}
 	})
+	const widgetsItem = widgets.map((item) => {
+		return {
+			"widget" : item.widgetId,
+			"layout" : item.layout
+		}
+	})
 	const tenantId  = "60bdf4253f08118fcef4f30a";
-	item = {...item  , "tenantId" : tenantId }
-	return item;
+	const updatedItem = {...item , "widgets" : widgetsItem  , "tenantId" : tenantId }
+	return updatedItem;
 })
 
-fs.writeFile("reg_dashboard_dashboards_post_script.json",JSON.stringify(updateddashboardsCollection),function(err, result) {
+fs.writeFile("reg_dashboards_post_script.json",JSON.stringify(updateddashboardsCollection),function(err, result) {
     if(err) console.log('error', err);
 });

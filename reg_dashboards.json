@@ -5,6 +5,7 @@
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
 		"name": "Alerts : Horizon Scanning",
 		"type": "System",
+		"order": 1,
 		"widgets": [
 			{
 				"layout": {
@@ -59,6 +60,7 @@
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
 		"name": "Alerts : Regulatory Changes",
 		"type": "System",
+		"order": 2,
 		"widgets": [
 			{
 				"layout": {
@@ -122,6 +124,7 @@
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
 		"name": "Alerts : Agency Updates",
 		"type": "System",
+		"order": 3,
 		"widgets": [
 			{
 				"layout": {
@@ -176,6 +179,7 @@
 		"description": "Overview of all enforcement actions, including penalties and restitutions, actions by agencies, regulations impacted, and more. ",
 		"name": "Enforcement Actions Overview",
 		"type": "System",
+		"order": 4,
 		"widgets": [
 			{
 				"layout": {
@@ -230,6 +234,7 @@
 		"description": "Overview of all compliance objects, including Risks, Controls, and Tasks.",
 		"name": "Compliance Overview",
 		"type": "System",
+		"order": 5,
 		"widgets": [
 			{
 				"layout": {
