@@ -102,7 +102,7 @@
 		]
 	},
 	{
-		"id": " AlertsByTimePeriod:AgencyUpdates",
+		"id": "AlertsByTimePeriod:AgencyUpdates",
 		"description": "Displays the number of alerts generated over the last 12 months.",
 		"name": "Alerts by Time Period",
 		"type": "System",

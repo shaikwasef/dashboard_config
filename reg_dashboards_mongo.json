@@ -1,0 +1,397 @@
+[{
+  "_id": {
+    "$oid": "62ec9beffaa36966cb54e6e8"
+  },
+  "id": "Alerts:HorizonScanning",
+  "category": "Alerts",
+  "description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+  "name": "Alerts : Horizon Scanning",
+  "type": "System",
+  "widgets": [
+    {
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d1"
+      }
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6cb"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6c8"
+      }
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6ce"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d5"
+      }
+    }
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62ec9beffaa36966cb54e6e9"
+  },
+  "id": "Alerts:RegulatoryChanges",
+  "category": "Alerts",
+  "description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+  "name": "Alerts : Regulatory Changes",
+  "type": "System",
+  "widgets": [
+    {
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d2"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6c7"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6c6"
+      }
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6cc"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6c9"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6cf"
+      }
+    }
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62ec9beffaa36966cb54e6ea"
+  },
+  "id": "Alerts:AgencyUpdates",
+  "category": "Alerts",
+  "description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+  "name": "Alerts : Agency Updates",
+  "type": "System",
+  "widgets": [
+    {
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d3"
+      }
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6cd"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6ca"
+      }
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d0"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d4"
+      }
+    }
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62ec9beffaa36966cb54e6eb"
+  },
+  "id": "EnforcementActionsOverview",
+  "category": "Enforcement Actions",
+  "description": "Overview of all enforcement actions, including penalties and restitutions, actions by agencies, regulations impacted, and more. ",
+  "name": "Enforcement Actions Overview",
+  "type": "System",
+  "widgets": [
+    {
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d6"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 2,
+        "w": 12,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d9"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 12,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d7"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 6,
+        "w": 12,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6d8"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 8,
+        "w": 12,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6da"
+      }
+    }
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "62ec9beffaa36966cb54e6ec"
+  },
+  "id": "ComplianceDashboard",
+  "category": "Compliance",
+  "description": "Overview of all compliance objects, including Risks, Controls, and Tasks.",
+  "name": "Compliance Overview",
+  "type": "System",
+  "widgets": [
+    {
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6db"
+      }
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 0,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6dc"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6dd"
+      }
+    },
+    {
+      "layout": {
+        "x": 6,
+        "y": 2,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6de"
+      }
+    },
+    {
+      "layout": {
+        "x": 0,
+        "y": 4,
+        "w": 6,
+        "h": 2
+      },
+      "widgetId": {
+        "$oid": "62ec9b2ffaa36966cb54e6df"
+      }
+    }
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+}]

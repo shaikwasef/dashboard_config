@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e674"
+    "$oid": "62ec9a91faa36966cb54e6ad"
   },
   "id": "AlertsByRegulation",
   "category": "Alerts",
@@ -66,19 +66,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e675"
+    "$oid": "62ec9a91faa36966cb54e6ae"
   },
   "id": "AlertsByTimePeriod",
   "category": "Alerts",
@@ -149,19 +149,19 @@
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e676"
+    "$oid": "62ec9a91faa36966cb54e6af"
   },
   "id": "ImplementationStatus",
   "category": "Alerts",
@@ -241,19 +241,19 @@
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e677"
+    "$oid": "62ec9a91faa36966cb54e6b0"
   },
   "id": "AlertsByCorpus",
   "category": "Alerts",
@@ -337,19 +337,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e678"
+    "$oid": "62ec9a91faa36966cb54e6b1"
   },
   "id": "AlertsByAgency",
   "category": "Alerts",
@@ -440,19 +440,19 @@
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e679"
+    "$oid": "62ec9a91faa36966cb54e6b2"
   },
   "id": "AlertsByUsers",
   "category": "Alerts",
@@ -543,19 +543,19 @@
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e67a"
+    "$oid": "62ec9a91faa36966cb54e6b3"
   },
   "id": "AlertsByAgencyFeed",
   "category": "Alerts",
@@ -620,19 +620,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e67b"
+    "$oid": "62ec9a91faa36966cb54e6b4"
   },
   "id": "AlertRulePerJurisdiction",
   "category": "Alerts",
@@ -693,19 +693,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e67c"
+    "$oid": "62ec9a91faa36966cb54e6b5"
   },
   "id": "ActiveBillsByJurisdictionAndByStatus",
   "category": "Alerts",
@@ -772,19 +772,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e67d"
+    "$oid": "62ec9a91faa36966cb54e6b6"
   },
   "id": "EnforcementActionReport",
   "category": "Enforcement Actions",
@@ -866,19 +866,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e67e"
+    "$oid": "62ec9a91faa36966cb54e6b7"
   },
   "id": "PenaltiesAndRestitutions",
   "category": "Enforcement Actions",
@@ -943,19 +943,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e67f"
+    "$oid": "62ec9a91faa36966cb54e6b8"
   },
   "id": "ActionsByAgency",
   "category": "Enforcement Actions",
@@ -1017,19 +1017,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e680"
+    "$oid": "62ec9a91faa36966cb54e6b9"
   },
   "id": "NoOfEnforcementActions",
   "category": "Enforcement Actions",
@@ -1096,19 +1096,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e681"
+    "$oid": "62ec9a91faa36966cb54e6ba"
   },
   "id": "AuthoritativeDocumentsImpacted",
   "category": "Enforcement Actions",
@@ -1163,19 +1163,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e682"
+    "$oid": "62ec9a91faa36966cb54e6bb"
   },
   "id": "RisksByStatus",
   "category": "Compliance",
@@ -1230,19 +1230,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e683"
+    "$oid": "62ec9a91faa36966cb54e6bc"
   },
   "id": "ControlsByStatus",
   "category": "Compliance",
@@ -1295,19 +1295,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e684"
+    "$oid": "62ec9a91faa36966cb54e6bd"
   },
   "id": "TasksByStatus",
   "category": "Compliance",
@@ -1353,19 +1353,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e685"
+    "$oid": "62ec9a91faa36966cb54e6be"
   },
   "id": "OwnersOfRisksControlsTasks",
   "category": "Compliance",
@@ -1429,19 +1429,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec97d4faa36966cb54e686"
+    "$oid": "62ec9a91faa36966cb54e6bf"
   },
   "id": "TasksOverdue",
   "category": "Compliance",
@@ -1494,12 +1494,12 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }

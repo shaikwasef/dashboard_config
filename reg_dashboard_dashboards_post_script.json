@@ -14,7 +14,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e69a"
+					"$oid": "62ec9b2ffaa36966cb54e6d1"
 				}
 			},
 			{
@@ -25,7 +25,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e694"
+					"$oid": "62ec9b2ffaa36966cb54e6cb"
 				}
 			},
 			{
@@ -36,7 +36,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e691"
+					"$oid": "62ec9b2ffaa36966cb54e6c8"
 				}
 			},
 			{
@@ -47,7 +47,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e697"
+					"$oid": "62ec9b2ffaa36966cb54e6ce"
 				}
 			},
 			{
@@ -58,14 +58,14 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e69e"
+					"$oid": "62ec9b2ffaa36966cb54e6d5"
 				}
 			}
 		],
 		"tenantId": "60bdf4253f08118fcef4f30a"
 	},
 	{
-		"id": "Alerts: Regulatory Changes",
+		"id": "Alerts:RegulatoryChanges",
 		"category": "Alerts",
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
 		"name": "Alerts : Regulatory Changes",
@@ -79,7 +79,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e69b"
+					"$oid": "62ec9b2ffaa36966cb54e6d2"
 				}
 			},
 			{
@@ -90,7 +90,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e690"
+					"$oid": "62ec9b2ffaa36966cb54e6c7"
 				}
 			},
 			{
@@ -101,7 +101,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e68f"
+					"$oid": "62ec9b2ffaa36966cb54e6c6"
 				}
 			},
 			{
@@ -112,7 +112,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e695"
+					"$oid": "62ec9b2ffaa36966cb54e6cc"
 				}
 			},
 			{
@@ -123,7 +123,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e692"
+					"$oid": "62ec9b2ffaa36966cb54e6c9"
 				}
 			},
 			{
@@ -134,14 +134,14 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e698"
+					"$oid": "62ec9b2ffaa36966cb54e6cf"
 				}
 			}
 		],
 		"tenantId": "60bdf4253f08118fcef4f30a"
 	},
 	{
-		"id": "Alerts: Agency Updates",
+		"id": "Alerts:AgencyUpdates",
 		"category": "Alerts",
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
 		"name": "Alerts : Agency Updates",
@@ -155,7 +155,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e69c"
+					"$oid": "62ec9b2ffaa36966cb54e6d3"
 				}
 			},
 			{
@@ -165,7 +165,9 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByTimePeriod:AgencyUpdates"
+				"widgetId": {
+					"$oid": "62ec9b2ffaa36966cb54e6cd"
+				}
 			},
 			{
 				"layout": {
@@ -175,7 +177,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e693"
+					"$oid": "62ec9b2ffaa36966cb54e6ca"
 				}
 			},
 			{
@@ -186,7 +188,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e699"
+					"$oid": "62ec9b2ffaa36966cb54e6d0"
 				}
 			},
 			{
@@ -197,7 +199,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e69d"
+					"$oid": "62ec9b2ffaa36966cb54e6d4"
 				}
 			}
 		],
@@ -218,7 +220,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e69f"
+					"$oid": "62ec9b2ffaa36966cb54e6d6"
 				}
 			},
 			{
@@ -229,7 +231,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e6a2"
+					"$oid": "62ec9b2ffaa36966cb54e6d9"
 				}
 			},
 			{
@@ -240,7 +242,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e6a0"
+					"$oid": "62ec9b2ffaa36966cb54e6d7"
 				}
 			},
 			{
@@ -251,7 +253,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e6a1"
+					"$oid": "62ec9b2ffaa36966cb54e6d8"
 				}
 			},
 			{
@@ -262,7 +264,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e6a3"
+					"$oid": "62ec9b2ffaa36966cb54e6da"
 				}
 			}
 		],
@@ -283,7 +285,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e6a4"
+					"$oid": "62ec9b2ffaa36966cb54e6db"
 				}
 			},
 			{
@@ -294,7 +296,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e6a5"
+					"$oid": "62ec9b2ffaa36966cb54e6dc"
 				}
 			},
 			{
@@ -305,7 +307,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e6a6"
+					"$oid": "62ec9b2ffaa36966cb54e6dd"
 				}
 			},
 			{
@@ -316,7 +318,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e6a7"
+					"$oid": "62ec9b2ffaa36966cb54e6de"
 				}
 			},
 			{
@@ -327,7 +329,7 @@
 					"h": 2
 				},
 				"widgetId": {
-					"$oid": "62ec9861faa36966cb54e6a8"
+					"$oid": "62ec9b2ffaa36966cb54e6df"
 				}
 			}
 		],

@@ -54,7 +54,7 @@
 		]
 	},
 	{
-		"id": "Alerts: Regulatory Changes",
+		"id": "Alerts:RegulatoryChanges",
 		"category": "Alerts",
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
 		"name": "Alerts : Regulatory Changes",
@@ -117,7 +117,7 @@
 		]
 	},
 	{
-		"id": "Alerts: Agency Updates",
+		"id": "Alerts:AgencyUpdates",
 		"category": "Alerts",
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
 		"name": "Alerts : Agency Updates",
