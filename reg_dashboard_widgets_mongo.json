@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6c6"
+    "$oid": "63288202c58f7b33597e54b7"
   },
   "id": "AlertsByRegulation",
   "description": "Displays the total number of alerts for each topic/regulation.",
@@ -10,23 +10,54 @@
     "bar"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6ad"
+    "$oid": "63288173c58f7b33597e549e"
   },
   "defaultTimeFilter": "Last 90 days",
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6c7"
+    "$oid": "63288202c58f7b33597e54b8"
+  },
+  "id": "RegulatoryChangesTopic",
+  "description": "Displays the total number of alerts for each topic/regulation.",
+  "name": "Regulatory Changes by Topic",
+  "type": "System",
+  "viewType": [
+    "bar"
+  ],
+  "cube": {
+    "$oid": "63288173c58f7b33597e549e"
+  },
+  "defaultTimeFilter": "Last 90 days",
+  "filters": [
+    {
+      "$oid": "63287fd8c58f7b33597e5499"
+    }
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63288202c58f7b33597e54b9"
   },
   "id": "AlertsByCorpus",
   "description": "View alerts by different legislative and regulatory bodies, including statuses.",
@@ -36,477 +67,574 @@
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b0"
+    "$oid": "63288173c58f7b33597e54a1"
   },
   "defaultTimeFilter": "Last 90 days",
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6c8"
+    "$oid": "63288202c58f7b33597e54ba"
   },
-  "id": "ImplementationStatus:HorizonScanning",
-  "name": "Implementation Status: Horizon Scanning",
+  "id": "RegulatoryChangesCorpus",
+  "description": "View alerts by different legislative and regulatory bodies, including statuses.",
+  "name": "Regulatory Changes by Corpus",
+  "type": "System",
+  "viewType": [
+    "table"
+  ],
+  "cube": {
+    "$oid": "63288173c58f7b33597e54a1"
+  },
+  "defaultTimeFilter": "Last 90 days",
+  "filters": [
+    {
+      "$oid": "63287fd8c58f7b33597e5497"
+    }
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63288202c58f7b33597e54bb"
+  },
+  "id": "AlertsWorkflowStatus",
+  "name": "Alerts by Workflow Status",
   "description": "Displays the number of alerts in each workflow status over the last 12 months.",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6af"
+    "$oid": "63288173c58f7b33597e54a0"
+  },
+  "viewType": [
+    "line"
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63288202c58f7b33597e54bc"
+  },
+  "id": "BillsWorkflowStatus",
+  "name": "Bills by Workflow Status",
+  "description": "Displays the number of alerts in each workflow status over the last 12 months.",
+  "type": "System",
+  "cube": {
+    "$oid": "63288173c58f7b33597e54a0"
   },
   "viewType": [
     "line"
   ],
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e576"
-      },
-      "name": "Alert category : Bills"
+      "$oid": "63287fd8c58f7b33597e5496"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6c9"
+    "$oid": "63288202c58f7b33597e54bd"
   },
-  "id": "ImplementationStatus:RegulatoryChanges",
-  "name": "Implementation Status: Regulatory Changes",
+  "id": "RegulatoryChangesWorkflowStatus",
+  "name": "Regulatory Changes by Workflow Status",
   "description": "Displays the number of alerts in each workflow status over the last 12 months.",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6af"
+    "$oid": "63288173c58f7b33597e54a0"
   },
   "viewType": [
     "line"
   ],
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e577"
-      },
-      "name": "Alert category : Laws & Regulations"
+      "$oid": "63287fd8c58f7b33597e5497"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6ca"
+    "$oid": "63288202c58f7b33597e54be"
   },
-  "id": "ImplementationStatus:AgencyUpdates",
-  "name": "Implementation Status:Agency Updates",
+  "id": "AgencyUpdatesWorkflowStatus",
+  "name": "Agency Updates by Workflow Status",
   "description": "Displays the number of alerts in each workflow status over the last 12 months.",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6af"
+    "$oid": "63288173c58f7b33597e54a0"
   },
   "viewType": [
     "line"
   ],
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e578"
-      },
-      "name": "Alert category : News & Publications"
+      "$oid": "63287fd8c58f7b33597e5498"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6cb"
+    "$oid": "63288202c58f7b33597e54bf"
   },
-  "id": "AlertsByTimePeriod:HorizonScanning",
+  "id": "AlertsByTimePeriod",
   "description": "Displays the number of alerts generated over the last 12 months.",
-  "name": "Alerts By Time Period : HorizonScanning",
+  "name": "Alerts By Time Period",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6ae"
+    "$oid": "63288173c58f7b33597e549f"
+  },
+  "viewType": [
+    "bar"
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63288202c58f7b33597e54c0"
+  },
+  "id": "BillsTimePeriod",
+  "description": "Displays the number of alerts generated over the last 12 months.",
+  "name": "Bills by Time Period",
+  "type": "System",
+  "cube": {
+    "$oid": "63288173c58f7b33597e549f"
   },
   "viewType": [
     "bar"
   ],
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e576"
-      },
-      "name": "Alert category : Bills"
+      "$oid": "63287fd8c58f7b33597e5496"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6cc"
+    "$oid": "63288202c58f7b33597e54c1"
   },
-  "id": "AlertsByTimePeriod:RegulatoryChanges",
+  "id": "RegulatoryChangesTimePeriod",
   "description": "Displays the number of alerts generated over the last 12 months.",
-  "name": "Alerts By Time Period : Regulatory Changes",
+  "name": "Regulatory Changes by Time Period",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6ae"
+    "$oid": "63288173c58f7b33597e549f"
   },
   "viewType": [
     "bar"
   ],
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e577"
-      },
-      "name": "Alert category : Laws & Regulations"
+      "$oid": "63287fd8c58f7b33597e5497"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6cd"
+    "$oid": "63288202c58f7b33597e54c2"
   },
-  "id": "AlertsByTimePeriod:AgencyUpdates",
+  "id": "AgencyUpdatesTimePeriod",
   "description": "Displays the number of alerts generated over the last 12 months.",
-  "name": "Alerts by Time Period",
+  "name": "Agency Updates by Time Period",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6ae"
+    "$oid": "63288173c58f7b33597e549f"
   },
   "viewType": [
     "bar"
   ],
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e578"
-      },
-      "name": "Alert category : News & Publications"
+      "$oid": "63287fd8c58f7b33597e5498"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6ce"
+    "$oid": "63288202c58f7b33597e54c3"
   },
-  "id": "AlertsByUsers:HorizonScanning",
+  "id": "AlertsByOwners",
   "description": "Displays the number of alerts generated by users and their workflow status",
-  "name": "Alerts by User: Horizon Scanning",
+  "name": "Alerts by Owners",
   "type": "System",
   "viewType": [
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b2"
+    "$oid": "63288173c58f7b33597e54a3"
+  },
+  "defaultTimeFilter": "Last 90 days",
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63288202c58f7b33597e54c4"
+  },
+  "id": "BillsOwner",
+  "description": "Displays the number of alerts generated by users and their workflow status",
+  "name": "Bills by Owners",
+  "type": "System",
+  "viewType": [
+    "table"
+  ],
+  "cube": {
+    "$oid": "63288173c58f7b33597e54a3"
   },
   "defaultTimeFilter": "Last 90 days",
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e576"
-      },
-      "name": "Alert category : Bills"
+      "$oid": "63287fd8c58f7b33597e5496"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6cf"
+    "$oid": "63288202c58f7b33597e54c5"
   },
-  "id": "AlertsByUsers:RegulatoryChanges",
+  "id": "RegulatoryChangesOwner",
   "description": "Displays the number of alerts generated by users and their workflow status",
-  "name": "Alerts by User: Regulatory Changes",
+  "name": "Regulatory Changes by Owners",
   "type": "System",
   "viewType": [
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b2"
+    "$oid": "63288173c58f7b33597e54a3"
   },
   "defaultTimeFilter": "Last 90 days",
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e577"
-      },
-      "name": "Alert category : Laws & Regulations"
+      "$oid": "63287fd8c58f7b33597e5497"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d0"
+    "$oid": "63288202c58f7b33597e54c6"
   },
-  "id": "AlertsByUsers:AgencyUpdates",
+  "id": "AgencyUpdatesOwner",
   "description": "Displays the number of alerts generated by users and their workflow status",
-  "name": "Alerts by User: Agency Updates",
+  "name": "Agency Updates by Owners",
   "type": "System",
   "viewType": [
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b2"
+    "$oid": "63288173c58f7b33597e54a3"
   },
   "defaultTimeFilter": "Last 90 days",
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e578"
-      },
-      "name": "Alert category : News & Publications"
+      "$oid": "63287fd8c58f7b33597e5498"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d1"
+    "$oid": "63288202c58f7b33597e54c7"
   },
-  "id": "AlertsByAgency:HorizonScanning",
+  "id": "AlertsByAgency",
   "description": "Displays the number of alerts for different government agencies and their workflow status",
-  "name": "Alerts by Agency: Horizon Scanning",
+  "name": "Alerts by Agency",
   "type": "System",
   "viewType": [
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b1"
+    "$oid": "63288173c58f7b33597e54a2"
   },
   "defaultTimeFilter": "Last 30 days",
-  "filters": [
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e576"
-      },
-      "name": "Alert category : Bills"
-    }
-  ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d2"
+    "$oid": "63288202c58f7b33597e54c8"
   },
-  "id": "AlertsByAgency:Regulatorychanges",
+  "id": "BillsAgency",
   "description": "Displays the number of alerts for different government agencies and their workflow status",
-  "name": "Alerts by Agency: Regulatory changes",
+  "name": "Bills by Agency",
   "type": "System",
   "viewType": [
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b1"
+    "$oid": "63288173c58f7b33597e54a2"
   },
   "defaultTimeFilter": "Last 30 days",
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e577"
-      },
-      "name": "Alert category : Laws & Regulations"
+      "$oid": "63287fd8c58f7b33597e5496"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d3"
+    "$oid": "63288202c58f7b33597e54c9"
   },
-  "id": "AlertsByAgency:AgencyUpdates",
+  "id": "RegulatoryChangesAgency",
   "description": "Displays the number of alerts for different government agencies and their workflow status",
-  "name": "Alerts by Agency: Agency Updates",
+  "name": "Regulatory Changes by Agency",
   "type": "System",
   "viewType": [
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b1"
+    "$oid": "63288173c58f7b33597e54a2"
   },
   "defaultTimeFilter": "Last 30 days",
   "filters": [
     {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e578"
-      },
-      "name": "Alert category : News & Publications"
+      "$oid": "63287fd8c58f7b33597e5497"
     }
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d4"
+    "$oid": "63288202c58f7b33597e54ca"
   },
-  "id": "AlertsByAgencyFeed",
+  "id": "AgencyUpdatesAgency",
+  "description": "Displays the number of alerts for different government agencies and their workflow status",
+  "name": "Agency Updates by Agency",
+  "type": "System",
+  "viewType": [
+    "table"
+  ],
+  "cube": {
+    "$oid": "63288173c58f7b33597e54a2"
+  },
+  "defaultTimeFilter": "Last 30 days",
+  "filters": [
+    {
+      "$oid": "63287fd8c58f7b33597e5498"
+    }
+  ],
+  "tenantId": "60bdf4253f08118fcef4f30a",
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63288202c58f7b33597e54cb"
+  },
+  "id": "AgencyUpdatesAgencyFeed",
   "description": "Displays the number of feeds per jurisdiction for the latest 4 quarters",
-  "name": "Alerts by Agency Feed",
+  "name": "Agency Updates by Agency Feed",
   "type": "System",
   "viewType": [
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b3"
+    "$oid": "63288173c58f7b33597e54a4"
   },
   "defaultTimeFilter": "Last 4 quarters",
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d5"
+    "$oid": "63288202c58f7b33597e54cc"
   },
-  "id": "ActiveBillsByJurisdictionAndByStatus",
+  "id": "BillsJurisdictionStatus",
   "description": "Displays the number of active bills as per their jurisdiction and status",
-  "name": "Active Bills by Jurisdiction and by Status",
+  "name": "Bills by Jurisdiction and Status",
   "type": "System",
   "viewType": [
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b5"
+    "$oid": "63288173c58f7b33597e54a6"
   },
   "defaultTimeFilter": "Last 30 days",
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d6"
+    "$oid": "63288202c58f7b33597e54cd"
   },
   "id": "EnforcementActionReport",
   "description": "Displays the aggregated penalities and count of enforcement actions for various agencies",
@@ -516,23 +644,23 @@
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b6"
+    "$oid": "63288173c58f7b33597e54a7"
   },
   "defaultTimeFilter": "Last 90 days",
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d7"
+    "$oid": "63288202c58f7b33597e54ce"
   },
   "id": "PenaltiesAndRestitutions",
   "description": "Displays all the penalties and restitutions amount for enforcement actions for the last 4 quarters",
@@ -542,23 +670,23 @@
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b7"
+    "$oid": "63288173c58f7b33597e54a8"
   },
   "defaultTimeFilter": "Last 4 quarters",
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d8"
+    "$oid": "63288202c58f7b33597e54cf"
   },
   "id": "ActionsByAgency",
   "description": "Displays the number of enforcement actions by an agency and by action type for latest 4 quarters",
@@ -568,23 +696,23 @@
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b8"
+    "$oid": "63288173c58f7b33597e54a9"
   },
   "defaultTimeFilter": "Last 90 days",
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6d9"
+    "$oid": "63288202c58f7b33597e54d0"
   },
   "id": "NoOfEnforcementActions",
   "description": "Displays the total number of enforcement actions for all agencies for the last 4 quarters",
@@ -594,23 +722,23 @@
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6b9"
+    "$oid": "63288173c58f7b33597e54aa"
   },
   "defaultTimeFilter": "Last 4 quarters",
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6da"
+    "$oid": "63288202c58f7b33597e54d1"
   },
   "id": "AuthoritativeDocumentsImpacted",
   "description": "Displays the total number of authoritative documents impacted by enforcement actions for the last 4 quarters",
@@ -620,141 +748,141 @@
     "table"
   ],
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6ba"
+    "$oid": "63288173c58f7b33597e54ab"
   },
   "defaultTimeFilter": "Last 4 quarters",
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6db"
+    "$oid": "63288202c58f7b33597e54d2"
   },
   "id": "RisksByStatus",
   "description": "Provides a holistic view of all the risks along with their assigned status.",
   "name": "Risks by Status",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6bb"
+    "$oid": "63288173c58f7b33597e54ac"
   },
   "viewType": [
     "pie"
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6dc"
+    "$oid": "63288202c58f7b33597e54d3"
   },
   "id": "ControlsByStatus",
   "description": "Provides a holistic view of all the controls along with their assigned status.",
   "name": "Controls by Status",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6bc"
+    "$oid": "63288173c58f7b33597e54ad"
   },
   "viewType": [
     "pie"
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6dd"
+    "$oid": "63288202c58f7b33597e54d4"
   },
   "id": "TasksByStatus",
   "description": "Provides a holistic view of all the tasks along with their assigned status.",
   "name": "Tasks by Status",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6bd"
+    "$oid": "63288173c58f7b33597e54ae"
   },
   "viewType": [
     "pie"
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6de"
+    "$oid": "63288202c58f7b33597e54d5"
   },
   "id": "OwnersOfRisksControlsTasks",
   "description": "Shows the total number of Risks, Controls, and Tasks owned by each user.",
   "name": "Owners of Risks, Controls & Tasks",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6be"
+    "$oid": "63288173c58f7b33597e54af"
   },
   "viewType": [
     "table"
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9b2ffaa36966cb54e6df"
+    "$oid": "63288202c58f7b33597e54d6"
   },
   "id": "TasksOverdue",
   "description": "Displays the total number of tasks with their overdue time",
   "name": "Tasks Overdue",
   "type": "System",
   "cube": {
-    "$oid": "62ec9a91faa36966cb54e6bf"
+    "$oid": "63288173c58f7b33597e54b0"
   },
   "viewType": [
     "table"
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }

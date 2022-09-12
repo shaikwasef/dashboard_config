@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6ad"
+    "$oid": "63288173c58f7b33597e549e"
   },
   "id": "AlertsByRegulation",
   "category": "Alerts",
@@ -23,13 +23,6 @@
       {
         "member": "AlertsByTopic.grpName",
         "operator": "set"
-      },
-      {
-        "member": "AlertsByTopic.alertCategory",
-        "operator": "equals",
-        "values": [
-          "Laws & Regulations"
-        ]
       }
     ],
     "limit": 10,
@@ -41,16 +34,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "joinDateRange": false,
-      "fillMissingDates": true,
-      "y": [
-        "measures"
-      ],
-      "x": [
-        "AlertsByTopic.grpName"
-      ]
-    },
     "layout": "vertical",
     "showLegend": false
   },
@@ -66,19 +49,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6ae"
+    "$oid": "63288173c58f7b33597e549f"
   },
   "id": "AlertsByTimePeriod",
   "category": "Alerts",
@@ -106,16 +89,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "joinDateRange": false,
-      "fillMissingDates": true,
-      "y": [
-        "measures"
-      ],
-      "x": [
-        "AlertsCube.publishedDate.month"
-      ]
-    },
     "showLegend": false
   },
   "langMapping": [
@@ -129,43 +102,28 @@
     }
   ],
   "applicableFilters": [
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e576"
-      },
-      "name": "Alert category : Bills"
-    },
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e577"
-      },
-      "name": "Alert category : Laws & Regulations"
-    },
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e578"
-      },
-      "name": "Alert category : News & Publications"
-    }
+    "alertCategoryBills",
+    "alertCategoryLaws",
+    "alertCategoryNews"
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6af"
+    "$oid": "63288173c58f7b33597e54a0"
   },
-  "id": "ImplementationStatus",
+  "id": "AlertsWorkflowStatus",
   "category": "Alerts",
-  "name": "Implementation Status",
+  "name": "Alerts By Workflow Status",
   "query": {
     "measures": [
       "AlertsCube.unread",
@@ -221,39 +179,24 @@
     }
   ],
   "applicableFilters": [
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e576"
-      },
-      "name": "Alert category : Bills"
-    },
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e577"
-      },
-      "name": "Alert category : Laws & Regulations"
-    },
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e578"
-      },
-      "name": "Alert category : News & Publications"
-    }
+    "alertCategoryBills",
+    "alertCategoryLaws",
+    "alertCategoryNews"
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b0"
+    "$oid": "63288173c58f7b33597e54a1"
   },
   "id": "AlertsByCorpus",
   "category": "Alerts",
@@ -337,19 +280,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b1"
+    "$oid": "63288173c58f7b33597e54a2"
   },
   "id": "AlertsByAgency",
   "category": "Alerts",
@@ -420,43 +363,28 @@
     }
   ],
   "applicableFilters": [
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e576"
-      },
-      "name": "Alert category : Bills"
-    },
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e577"
-      },
-      "name": "Alert category : Laws & Regulations"
-    },
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e578"
-      },
-      "name": "Alert category : News & Publications"
-    }
+    "alertCategoryBills",
+    "alertCategoryLaws",
+    "alertCategoryNews"
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b2"
+    "$oid": "63288173c58f7b33597e54a3"
   },
-  "id": "AlertsByUsers",
+  "id": "AlertsByOwners",
   "category": "Alerts",
-  "name": "Alerts by Users",
+  "name": "Alerts by Owners",
   "query": {
     "measures": [
       "AlertsCube.unread",
@@ -523,41 +451,26 @@
     }
   ],
   "applicableFilters": [
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e576"
-      },
-      "name": "Alert category : Bills"
-    },
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e577"
-      },
-      "name": "Alert category : Laws & Regulations"
-    },
-    {
-      "id": {
-        "$oid": "62eb5b4efaa36966cb54e578"
-      },
-      "name": "Alert category : News & Publications"
-    }
+    "alertCategoryBills",
+    "alertCategoryLaws",
+    "alertCategoryNews"
   ],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b3"
+    "$oid": "63288173c58f7b33597e54a4"
   },
-  "id": "AlertsByAgencyFeed",
+  "id": "AgencyUpdatesAgencyFeed",
   "category": "Alerts",
   "name": "Feed Per Jurisdiction",
   "query": {
@@ -595,17 +508,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "joinDateRange": false,
-      "fillMissingDates": true,
-      "y": [
-        "JurisdictionsCube.displayName",
-        "AlertsCube.feedName"
-      ],
-      "x": [
-        "AlertsCube.publishedDate.quarter"
-      ]
-    },
     "widgetType": "quarterly"
   },
   "langMapping": [
@@ -620,19 +522,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b4"
+    "$oid": "63288173c58f7b33597e54a5"
   },
   "id": "AlertRulePerJurisdiction",
   "category": "Alerts",
@@ -668,17 +570,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "joinDateRange": false,
-      "fillMissingDates": true,
-      "y": [
-        "JurisdictionsCube.displayName",
-        "AlertsCube.alertType"
-      ],
-      "x": [
-        "AlertsCube.publishedDate.quarter"
-      ]
-    },
     "widgetType": "quarterly"
   },
   "langMapping": [
@@ -693,23 +584,23 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b5"
+    "$oid": "63288173c58f7b33597e54a6"
   },
-  "id": "ActiveBillsByJurisdictionAndByStatus",
+  "id": "BillsJurisdictionStatus",
   "category": "Alerts",
-  "name": "Active Bills by Jurisdiction and by Status",
+  "name": "Bills by Jurisdiction and Status",
   "query": {
     "measures": [
       "AlertsCube.unreadBillsCount",
@@ -772,19 +663,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b6"
+    "$oid": "63288173c58f7b33597e54a7"
   },
   "id": "EnforcementActionReport",
   "category": "Enforcement Actions",
@@ -824,18 +715,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "x": [
-        "EnforcementActionsCube.currency",
-        "EnforcementActionsCube.netAmount",
-        "EnforcementActionsCube.count"
-      ],
-      "y": [
-        "EnforcementActionsAgencyNamesCube.agencyNames"
-      ],
-      "fillMissingDates": true,
-      "joinDateRange": false
-    },
     "widgetType": "aggregations"
   },
   "langMapping": [
@@ -866,19 +745,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b7"
+    "$oid": "63288173c58f7b33597e54a8"
   },
   "id": "PenaltiesAndRestitutions",
   "category": "Enforcement Actions",
@@ -914,17 +793,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "fillMissingDates": true,
-      "y": [
-        "EnforcementActionsAgencyNamesCube.agencyNames"
-      ],
-      "x": [
-        "EnforcementActionsCube.effectiveDate.quarter",
-        "EnforcementActionsCube.currency"
-      ],
-      "limit": 50000
-    },
     "widgetType": "quarterly"
   },
   "langMapping": [
@@ -943,19 +811,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b8"
+    "$oid": "63288173c58f7b33597e54a9"
   },
   "id": "ActionsByAgency",
   "category": "Enforcement Actions",
@@ -998,15 +866,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "x": [
-        "HarmonizedActionTypeCube.harmonizedActionType"
-      ],
-      "y": [
-        "EnforcementActionsAgencyNamesCube.agencyNames"
-      ],
-      "fillMissingDates": true
-    },
     "widgetType": "entityMapping"
   },
   "langMapping": [
@@ -1017,19 +876,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6b9"
+    "$oid": "63288173c58f7b33597e54aa"
   },
   "id": "NoOfEnforcementActions",
   "category": "Enforcement Actions",
@@ -1064,16 +923,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "x": [
-        "EnforcementActionsCube.effectiveDate.quarter"
-      ],
-      "y": [
-        "EnforcementActionsAgencyNamesCube.agencyNames"
-      ],
-      "fillMissingDates": true,
-      "joinDateRange": false
-    },
     "widgetType": "quarterly"
   },
   "langMapping": [
@@ -1096,19 +945,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6ba"
+    "$oid": "63288173c58f7b33597e54ab"
   },
   "id": "AuthoritativeDocumentsImpacted",
   "category": "Enforcement Actions",
@@ -1139,16 +988,6 @@
     "order": {}
   },
   "meta": {
-    "pivotConfig": {
-      "x": [
-        "EnforcementActionsCube.effectiveDate.quarter"
-      ],
-      "y": [
-        "RegulationsCube.citations",
-        "RegulationsCube.authoritativeDocuments"
-      ],
-      "fillMissingDates": true
-    },
     "widgetType": "quarterly"
   },
   "langMapping": [
@@ -1163,19 +1002,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6bb"
+    "$oid": "63288173c58f7b33597e54ac"
   },
   "id": "RisksByStatus",
   "category": "Compliance",
@@ -1201,16 +1040,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "joinDateRange": false,
-      "fillMissingDates": true,
-      "y": [
-        "measures"
-      ],
-      "x": [
-        "RisksByStatusCube.riskStatus"
-      ]
-    },
     "layout": "vertical",
     "allowDecimals": false
   },
@@ -1230,19 +1059,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6bc"
+    "$oid": "63288173c58f7b33597e54ad"
   },
   "id": "ControlsByStatus",
   "category": "Compliance",
@@ -1268,14 +1097,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "y": [
-        "measures"
-      ],
-      "x": [
-        "ControlsByStatusCube.controlStatus"
-      ]
-    },
     "layout": "vertical",
     "allowDecimals": false
   },
@@ -1295,19 +1116,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6bd"
+    "$oid": "63288173c58f7b33597e54ae"
   },
   "id": "TasksByStatus",
   "category": "Compliance",
@@ -1330,14 +1151,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "y": [
-        "measures"
-      ],
-      "x": [
-        "MapStatusCubeTask.status"
-      ]
-    },
     "layout": "vertical",
     "allowDecimals": false
   },
@@ -1353,22 +1166,23 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6be"
+    "$oid": "63288173c58f7b33597e54af"
   },
   "id": "OwnersOfRisksControlsTasks",
   "category": "Compliance",
+  "name": "Owners of Risks Controls and Tasks",
   "query": {
     "measures": [
       "MapOwnersCube.riskCount",
@@ -1395,14 +1209,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "y": [
-        "measures"
-      ],
-      "x": [
-        "Users.fullName"
-      ]
-    },
     "layout": "vertical"
   },
   "langMapping": [
@@ -1429,19 +1235,19 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   }
 },{
   "_id": {
-    "$oid": "62ec9a91faa36966cb54e6bf"
+    "$oid": "63288173c58f7b33597e54b0"
   },
   "id": "TasksOverdue",
   "category": "Compliance",
@@ -1470,14 +1276,6 @@
     ]
   },
   "meta": {
-    "pivotConfig": {
-      "y": [
-        "measures"
-      ],
-      "x": [
-        "TasksCube.dueDate"
-      ]
-    },
     "layout": "vertical",
     "allowDecimals": false,
     "widgetType": "overdueDate"
@@ -1494,12 +1292,12 @@
   ],
   "applicableFilters": [],
   "tenantId": "60bdf4253f08118fcef4f30a",
-  "created": {
+  "updated": {
     "$date": {
       "$numberLong": "1456992000000"
     }
   },
-  "updated": {
+  "created": {
     "$date": {
       "$numberLong": "1456992000000"
     }

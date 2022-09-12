@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "62eb5b4efaa36966cb54e576"
+    "$oid": "63287fd8c58f7b33597e5496"
   },
   "id": "alertCategoryBills",
   "name": "Alert category : Bills",
@@ -10,10 +10,21 @@
     "values": [
       "Bills"
     ]
-  }
+  },
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "tenantId": "60bdf4253f08118fcef4f30a"
 },{
   "_id": {
-    "$oid": "62eb5b4efaa36966cb54e577"
+    "$oid": "63287fd8c58f7b33597e5497"
   },
   "id": "alertCategoryLaws",
   "name": "Alert category : Laws & Regulations",
@@ -23,10 +34,21 @@
     "values": [
       "Laws & Regulations"
     ]
-  }
+  },
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "tenantId": "60bdf4253f08118fcef4f30a"
 },{
   "_id": {
-    "$oid": "62eb5b4efaa36966cb54e578"
+    "$oid": "63287fd8c58f7b33597e5498"
   },
   "id": "alertCategoryNews",
   "name": "Alert category : News & Publications",
@@ -36,5 +58,40 @@
     "values": [
       "News & Publications"
     ]
-  }
+  },
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "tenantId": "60bdf4253f08118fcef4f30a"
+},{
+  "_id": {
+    "$oid": "63287fd8c58f7b33597e5499"
+  },
+  "id": "alertTopicLaws",
+  "name": "Alert topic : Laws & Regulations",
+  "filter": {
+    "member": "AlertsByTopic.alertCategory",
+    "operator": "equals",
+    "values": [
+      "Laws & Regulations"
+    ]
+  },
+  "created": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "updated": {
+    "$date": {
+      "$numberLong": "1456992000000"
+    }
+  },
+  "tenantId": "60bdf4253f08118fcef4f30a"
 }]

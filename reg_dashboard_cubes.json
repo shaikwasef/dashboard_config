@@ -21,13 +21,6 @@
 				{
 					"member": "AlertsByTopic.grpName",
 					"operator": "set"
-				},
-				{
-					"member": "AlertsByTopic.alertCategory",
-					"operator": "equals",
-					"values": [
-						"Laws & Regulations"
-					]
 				}
 			],
 			"limit": 10,
@@ -114,24 +107,15 @@
 			}
 		],
 		"applicableFilters": [
-			{
-				"id": "alertCategoryBills",
-				"name": "Alert category : Bills"
-			},
-			{
-				"id": "alertCategoryLaws",
-				"name": "Alert category : Laws & Regulations"
-			},
-			{
-				"id": "alertCategoryNews",
-				"name": "Alert category : News & Publications"
-			}
+			"alertCategoryBills",
+			"alertCategoryLaws",
+			"alertCategoryNews"
 		]
 	},
 	{
-		"id": "ImplementationStatus",
+		"id": "AlertsWorkflowStatus",
 		"category": "Alerts",
-		"name": "Implementation Status",
+		"name": "Alerts By Workflow Status",
 		"query": {
 			"measures": [
 				"AlertsCube.unread",
@@ -187,18 +171,9 @@
 			}
 		],
 		"applicableFilters": [
-			{
-				"id": "alertCategoryBills",
-				"name": "Alert category : Bills"
-			},
-			{
-				"id": "alertCategoryLaws",
-				"name": "Alert category : Laws & Regulations"
-			},
-			{
-				"id": "alertCategoryNews",
-				"name": "Alert category : News & Publications"
-			}
+			"alertCategoryBills",
+			"alertCategoryLaws",
+			"alertCategoryNews"
 		]
 	},
 	{
@@ -354,24 +329,15 @@
 			}
 		],
 		"applicableFilters": [
-			{
-				"id": "alertCategoryBills",
-				"name": "Alert category : Bills"
-			},
-			{
-				"id": "alertCategoryLaws",
-				"name": "Alert category : Laws & Regulations"
-			},
-			{
-				"id": "alertCategoryNews",
-				"name": "Alert category : News & Publications"
-			}
+			"alertCategoryBills",
+			"alertCategoryLaws",
+			"alertCategoryNews"
 		]
 	},
 	{
-		"id": "AlertsByUsers",
+		"id": "AlertsByOwners",
 		"category": "Alerts",
-		"name": "Alerts by Users",
+		"name": "Alerts by Owners",
 		"query": {
 			"measures": [
 				"AlertsCube.unread",
@@ -438,22 +404,13 @@
 			}
 		],
 		"applicableFilters": [
-			{
-				"id": "alertCategoryBills",
-				"name": "Alert category : Bills"
-			},
-			{
-				"id": "alertCategoryLaws",
-				"name": "Alert category : Laws & Regulations"
-			},
-			{
-				"id": "alertCategoryNews",
-				"name": "Alert category : News & Publications"
-			}
+			"alertCategoryBills",
+			"alertCategoryLaws",
+			"alertCategoryNews"
 		]
 	},
 	{
-		"id": "AlertsByAgencyFeed",
+		"id": "AgencyUpdatesAgencyFeed",
 		"category": "Alerts",
 		"name": "Feed Per Jurisdiction",
 		"query": {
@@ -577,9 +534,9 @@
 		"applicableFilters": []
 	},
 	{
-		"id": "ActiveBillsByJurisdictionAndByStatus",
+		"id": "BillsJurisdictionStatus",
 		"category": "Alerts",
-		"name": "Active Bills by Jurisdiction and by Status",
+		"name": "Bills by Jurisdiction and Status",
 		"query": {
 			"measures": [
 				"AlertsCube.unreadBillsCount",
@@ -1122,6 +1079,7 @@
 	{
 		"id": "OwnersOfRisksControlsTasks",
 		"category": "Compliance",
+		"name": "Owners of Risks Controls and Tasks",
 		"query": {
 			"measures": [
 				"MapOwnersCube.riskCount",

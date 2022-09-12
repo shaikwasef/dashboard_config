@@ -1,9 +1,9 @@
 [
 	{
-		"id": "Alerts:HorizonScanning",
+		"id": "AlertsOverview",
 		"category": "Alerts",
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
-		"name": "Alerts : Horizon Scanning",
+		"name": "Alerts Overview",
 		"type": "System",
 		"order": 1,
 		"widgets": [
@@ -14,7 +14,7 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByAgency:HorizonScanning"
+				"widgetId": "AlertsByRegulation"
 			},
 			{
 				"layout": {
@@ -23,7 +23,7 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByTimePeriod:HorizonScanning"
+				"widgetId": "AlertsByTimePeriod"
 			},
 			{
 				"layout": {
@@ -32,7 +32,7 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ImplementationStatus:HorizonScanning"
+				"widgetId": "AlertsWorkflowStatus"
 			},
 			{
 				"layout": {
@@ -41,7 +41,7 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByUsers:HorizonScanning"
+				"widgetId": "AlertsByOwners"
 			},
 			{
 				"layout": {
@@ -50,15 +50,42 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ActiveBillsByJurisdictionAndByStatus"
+				"widgetId": "AlertsByCorpus"
+			},
+			{
+				"layout": {
+					"x": 6,
+					"y": 4,
+					"w": 6,
+					"h": 2
+				},
+				"widgetId": "AlertsByAgency"
+			},
+			{
+				"layout": {
+					"x": 0,
+					"y": 6,
+					"w": 6,
+					"h": 2
+				},
+				"widgetId": "BillsJurisdictionStatus"
+			},
+			{
+				"layout": {
+					"x": 6,
+					"y": 6,
+					"w": 6,
+					"h": 2
+				},
+				"widgetId": "AgencyUpdatesAgencyFeed"
 			}
 		]
 	},
 	{
-		"id": "Alerts:RegulatoryChanges",
+		"id": "BillAlerts",
 		"category": "Alerts",
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
-		"name": "Alerts : Regulatory Changes",
+		"name": "Bill Alerts",
 		"type": "System",
 		"order": 2,
 		"widgets": [
@@ -69,16 +96,16 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByAgency:Regulatorychanges"
+				"widgetId": "BillsTimePeriod"
 			},
 			{
 				"layout": {
-					"x": 0,
+					"x": 6,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByCorpus"
+				"widgetId": "BillsWorkflowStatus"
 			},
 			{
 				"layout": {
@@ -87,7 +114,7 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByRegulation"
+				"widgetId": "BillsJurisdictionStatus"
 			},
 			{
 				"layout": {
@@ -96,33 +123,15 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByTimePeriod:RegulatoryChanges"
-			},
-			{
-				"layout": {
-					"x": 0,
-					"y": 4,
-					"w": 6,
-					"h": 2
-				},
-				"widgetId": "ImplementationStatus:RegulatoryChanges"
-			},
-			{
-				"layout": {
-					"x": 0,
-					"y": 4,
-					"w": 6,
-					"h": 2
-				},
-				"widgetId": "AlertsByUsers:RegulatoryChanges"
+				"widgetId": "AlertsByOwners"
 			}
 		]
 	},
 	{
-		"id": "Alerts:AgencyUpdates",
+		"id": "RegulatoryChange",
 		"category": "Alerts",
 		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
-		"name": "Alerts : Agency Updates",
+		"name": "Regulatory Change",
 		"type": "System",
 		"order": 3,
 		"widgets": [
@@ -133,7 +142,7 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByAgency:AgencyUpdates"
+				"widgetId": "RegulatoryChangesTopic"
 			},
 			{
 				"layout": {
@@ -142,7 +151,7 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByTimePeriod:AgencyUpdates"
+				"widgetId": "RegulatoryChangesTimePeriod"
 			},
 			{
 				"layout": {
@@ -151,7 +160,7 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ImplementationStatus:AgencyUpdates"
+				"widgetId": "RegulatoryChangesWorkflowStatus"
 			},
 			{
 				"layout": {
@@ -160,7 +169,7 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByUsers:AgencyUpdates"
+				"widgetId": "RegulatoryChangesOwner"
 			},
 			{
 				"layout": {
@@ -169,7 +178,71 @@
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByAgencyFeed"
+				"widgetId": "RegulatoryChangesCorpus"
+			},
+			{
+				"layout": {
+					"x": 6,
+					"y": 4,
+					"w": 6,
+					"h": 2
+				},
+				"widgetId": "RegulatoryChangesAgency"
+			}
+		]
+	},
+	{
+		"id": "AgencyUpdate",
+		"category": "Alerts",
+		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+		"name": "Agency Update",
+		"type": "System",
+		"order": 4,
+		"widgets": [
+			{
+				"layout": {
+					"x": 0,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"widgetId": "AgencyUpdatesAgency"
+			},
+			{
+				"layout": {
+					"x": 6,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"widgetId": "AgencyUpdatesTimePeriod"
+			},
+			{
+				"layout": {
+					"x": 0,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"widgetId": "AgencyUpdatesWorkflowStatus"
+			},
+			{
+				"layout": {
+					"x": 6,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"widgetId": "AgencyUpdatesOwner"
+			},
+			{
+				"layout": {
+					"x": 0,
+					"y": 4,
+					"w": 6,
+					"h": 2
+				},
+				"widgetId": "AgencyUpdatesAgencyFeed"
 			}
 		]
 	},
@@ -179,7 +252,7 @@
 		"description": "Overview of all enforcement actions, including penalties and restitutions, actions by agencies, regulations impacted, and more. ",
 		"name": "Enforcement Actions Overview",
 		"type": "System",
-		"order": 4,
+		"order": 5,
 		"widgets": [
 			{
 				"layout": {
@@ -234,7 +307,7 @@
 		"description": "Overview of all compliance objects, including Risks, Controls, and Tasks.",
 		"name": "Compliance Overview",
 		"type": "System",
-		"order": 5,
+		"order": 6,
 		"widgets": [
 			{
 				"layout": {
