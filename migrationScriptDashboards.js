@@ -15,7 +15,8 @@ let updateddashboardsCollection = dashboardsCollection.map((item) => {
 	const widgetsItem = widgets.map((item) => {
 		return {
 			"widget" : item.widgetId,
-			"layout" : item.layout
+			"layout" : item.layout,
+			"viewType" : item.viewType
 		}
 	})
 	const tenantId  = "60bdf4253f08118fcef4f30a";

@@ -5,173 +5,255 @@
 		"name": "Alerts by Topic",
 		"type": "System",
 		"viewType": [
+			"column",
 			"bar"
 		],
 		"cube": "AlertsByRegulation",
-		"defaultTimeFilter": "Last 90 days"
+		"defaultTimeFilter": "Last 90 days",
+		"baseUrl": ""
+	},
+	{
+		"id": "RegulatoryChangesTopic",
+		"description": "Displays the total number of alerts for each topic/regulation.",
+		"name": "Regulatory Changes by Topic",
+		"type": "System",
+		"viewType": [
+			"column",
+			"bar"
+		],
+		"cube": "AlertsByRegulation",
+		"defaultTimeFilter": "Last 90 days",
+		"filters": [
+			"alertTopicLaws"
+		],
+		"baseUrl": ""
 	},
 	{
 		"id": "AlertsByCorpus",
-		"description": "View alerts by different legislative and regulatory bodies, including statuses.",
+		"description": "View the number of alerts for different legislative and regulatory bodies and their workflow status.",
 		"name": "Alerts by Corpus",
 		"type": "System",
 		"viewType": [
+			"column",
 			"table"
 		],
 		"cube": "AlertsByCorpus",
-		"defaultTimeFilter": "Last 90 days"
+		"defaultTimeFilter": "Last 90 days",
+		"baseUrl": "/alerts/all-alerts"
 	},
 	{
-		"id": "ImplementationStatus:HorizonScanning",
-		"name": "Implementation Status: Horizon Scanning",
+		"id": "RegulatoryChangesCorpus",
+		"description": "View alerts by different legislative and regulatory bodies, including statuses.",
+		"name": "Regulatory Changes by Corpus",
+		"type": "System",
+		"viewType": [
+			"column",
+			"table"
+		],
+		"cube": "AlertsByCorpus",
+		"defaultTimeFilter": "Last 90 days",
+		"filters": [
+			"alertCategoryLaws"
+		],
+		"baseUrl": "/alerts/regulatory-changes"
+	},
+	{
+		"id": "AlertsWorkflowStatus",
+		"name": "Alerts by Workflow Status",
 		"description": "Displays the number of alerts in each workflow status over the last 12 months.",
 		"type": "System",
-		"cube": "ImplementationStatus",
+		"cube": "AlertsWorkflowStatus",
 		"viewType": [
-			"line"
+			"line",
+			"column"
 		],
-		"filters": [
-			{
-				"id": "alertCategoryBills",
-				"name": "Alert category : Bills"
-			}
-		]
+		"baseUrl": "/alerts/all-alerts"
 	},
 	{
-		"id": "ImplementationStatus:RegulatoryChanges",
-		"name": "Implementation Status: Regulatory Changes",
+		"id": "BillsWorkflowStatus",
+		"name": "Bills by Workflow Status",
 		"description": "Displays the number of alerts in each workflow status over the last 12 months.",
 		"type": "System",
-		"cube": "ImplementationStatus",
+		"cube": "AlertsWorkflowStatus",
 		"viewType": [
-			"line"
+			"line",
+			"column"
 		],
 		"filters": [
-			{
-				"id": "alertCategoryLaws",
-				"name": "Alert category : Laws & Regulations"
-			}
-		]
+			"alertCategoryBills"
+		],
+		"baseUrl": "/alerts/horizon-scanning"
 	},
 	{
-		"id": "ImplementationStatus:AgencyUpdates",
-		"name": "Implementation Status:Agency Updates",
+		"id": "RegulatoryChangesWorkflowStatus",
+		"name": "Regulatory Changes by Workflow Status",
 		"description": "Displays the number of alerts in each workflow status over the last 12 months.",
 		"type": "System",
-		"cube": "ImplementationStatus",
+		"cube": "AlertsWorkflowStatus",
 		"viewType": [
-			"line"
+			"line",
+			"column"
 		],
 		"filters": [
-			{
-				"id": "alertCategoryNews",
-				"name": "Alert category : News & Publications"
-			}
-		]
+			"alertCategoryLaws"
+		],
+		"baseUrl": "/alerts/regulatory-changes"
 	},
 	{
-		"id": "AlertsByTimePeriod:HorizonScanning",
+		"id": "AgencyUpdatesWorkflowStatus",
+		"name": "Agency Updates by Workflow Status",
+		"description": "Displays the number of alerts in each workflow status over the last 12 months.",
+		"type": "System",
+		"cube": "AlertsWorkflowStatus",
+		"viewType": [
+			"line",
+			"column"
+		],
+		"filters": [
+			"alertCategoryNews"
+		],
+		"baseUrl": "/alerts/agency-updates"
+	},
+	{
+		"id": "AlertsByTimePeriod",
 		"description": "Displays the number of alerts generated over the last 12 months.",
-		"name": "Alerts By Time Period : HorizonScanning",
+		"name": "Alerts By Time Period",
 		"type": "System",
 		"cube": "AlertsByTimePeriod",
 		"viewType": [
-			"bar"
+			"column",
+			"bar",
+			"line"
 		],
-		"filters": [
-			{
-				"id": "alertCategoryBills",
-				"name": "Alert category : Bills"
-			}
-		]
+		"baseUrl": "/alerts/all-alerts"
 	},
 	{
-		"id": "AlertsByTimePeriod:RegulatoryChanges",
+		"id": "BillsTimePeriod",
 		"description": "Displays the number of alerts generated over the last 12 months.",
-		"name": "Alerts By Time Period : Regulatory Changes",
+		"name": "Bills by Time Period",
 		"type": "System",
 		"cube": "AlertsByTimePeriod",
 		"viewType": [
-			"bar"
+			"column",
+			"bar",
+			"line"
 		],
 		"filters": [
-			{
-				"id": "alertCategoryLaws",
-				"name": "Alert category : Laws & Regulations"
-			}
-		]
+			"alertCategoryBills"
+		],
+		"baseUrl": "/alerts/horizon-scanning"
 	},
 	{
-		"id": "AlertsByTimePeriod:AgencyUpdates",
+		"id": "RegulatoryChangesTimePeriod",
 		"description": "Displays the number of alerts generated over the last 12 months.",
-		"name": "Alerts by Time Period",
+		"name": "Regulatory Changes by Time Period",
 		"type": "System",
 		"cube": "AlertsByTimePeriod",
 		"viewType": [
-			"bar"
+			"column",
+			"bar",
+			"line"
 		],
 		"filters": [
-			{
-				"id": "alertCategoryNews",
-				"name": "Alert category : News & Publications"
-			}
-		]
+			"alertCategoryLaws"
+		],
+		"baseUrl": "/alerts/regulatory-changes"
 	},
 	{
-		"id": "AlertsByUsers:HorizonScanning",
+		"id": "AgencyUpdatesTimePeriod",
+		"description": "Displays the number of alerts generated over the last 12 months.",
+		"name": "Agency Updates by Time Period",
+		"type": "System",
+		"cube": "AlertsByTimePeriod",
+		"viewType": [
+			"column",
+			"bar",
+			"line"
+		],
+		"filters": [
+			"alertCategoryNews"
+		],
+		"baseUrl": "/alerts/agency-updates"
+	},
+	{
+		"id": "AlertsByOwners",
 		"description": "Displays the number of alerts generated by users and their workflow status",
-		"name": "Alerts by User: Horizon Scanning",
+		"name": "Alerts by Owners",
 		"type": "System",
 		"viewType": [
+			"column",
 			"table"
 		],
-		"cube": "AlertsByUsers",
+		"cube": "AlertsByOwners",
 		"defaultTimeFilter": "Last 90 days",
-		"filters": [
-			{
-				"id": "alertCategoryBills",
-				"name": "Alert category : Bills"
-			}
-		]
+		"baseUrl": "/alerts/all-alerts"
 	},
 	{
-		"id": "AlertsByUsers:RegulatoryChanges",
+		"id": "BillsOwner",
 		"description": "Displays the number of alerts generated by users and their workflow status",
-		"name": "Alerts by User: Regulatory Changes",
+		"name": "Bills by Owners",
 		"type": "System",
 		"viewType": [
+			"column",
 			"table"
 		],
-		"cube": "AlertsByUsers",
+		"cube": "AlertsByOwners",
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			{
-				"id": "alertCategoryLaws",
-				"name": "Alert category : Laws & Regulations"
-			}
-		]
+			"alertCategoryOwnersBills"
+		],
+		"baseUrl": "/alerts/horizon-scanning"
 	},
 	{
-		"id": "AlertsByUsers:AgencyUpdates",
+		"id": "RegulatoryChangesOwner",
 		"description": "Displays the number of alerts generated by users and their workflow status",
-		"name": "Alerts by User: Agency Updates",
+		"name": "Regulatory Changes by Owners",
 		"type": "System",
 		"viewType": [
+			"column",
 			"table"
 		],
-		"cube": "AlertsByUsers",
+		"cube": "AlertsByOwners",
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			{
-				"id": "alertCategoryNews",
-				"name": "Alert category : News & Publications"
-			}
-		]
+			"alertCategoryOwnersLaws"
+		],
+		"baseUrl": "/alerts/regulatory-changes"
 	},
 	{
-		"id": "AlertsByAgency:HorizonScanning",
+		"id": "AgencyUpdatesOwner",
+		"description": "Displays the number of alerts generated by users and their workflow status",
+		"name": "Agency Updates by Owners",
+		"type": "System",
+		"viewType": [
+			"column",
+			"table"
+		],
+		"cube": "AlertsByOwners",
+		"defaultTimeFilter": "Last 90 days",
+		"filters": [
+			"alertCategoryOwnersNews"
+		],
+		"baseUrl": "/alerts/agency-updates"
+	},
+	{
+		"id": "AlertsByAgency",
+		"description": "View the number of alerts for different government agencies and their workflow status.",
+		"name": "Alerts by Agency",
+		"type": "System",
+		"viewType": [
+			"bar",
+			"column",
+			"table"
+		],
+		"cube": "AlertsByAgency",
+		"defaultTimeFilter": "Last 30 days",
+		"baseUrl": "/alerts/all-alerts"
+	},
+	{
+		"id": "BillsAgency",
 		"description": "Displays the number of alerts for different government agencies and their workflow status",
-		"name": "Alerts by Agency: Horizon Scanning",
+		"name": "Bills by Agency",
 		"type": "System",
 		"viewType": [
 			"table"
@@ -179,67 +261,96 @@
 		"cube": "AlertsByAgency",
 		"defaultTimeFilter": "Last 30 days",
 		"filters": [
-			{
-				"id": "alertCategoryBills",
-				"name": "Alert category : Bills"
-			}
+			"alertCategoryBills"
 		]
 	},
 	{
-		"id": "AlertsByAgency:Regulatorychanges",
+		"id": "RegulatoryChangesAgency",
 		"description": "Displays the number of alerts for different government agencies and their workflow status",
-		"name": "Alerts by Agency: Regulatory changes",
+		"name": "Regulatory Changes by Agency",
 		"type": "System",
 		"viewType": [
+			"bar",
+			"column",
 			"table"
 		],
 		"cube": "AlertsByAgency",
 		"defaultTimeFilter": "Last 30 days",
 		"filters": [
-			{
-				"id": "alertCategoryLaws",
-				"name": "Alert category : Laws & Regulations"
-			}
-		]
+			"alertCategoryLaws"
+		],
+		"baseUrl": "/alerts/regulatory-changes"
 	},
 	{
-		"id": "AlertsByAgency:AgencyUpdates",
+		"id": "AgencyUpdatesAgency",
 		"description": "Displays the number of alerts for different government agencies and their workflow status",
-		"name": "Alerts by Agency: Agency Updates",
+		"name": "Agency Updates",
 		"type": "System",
 		"viewType": [
+			"bar",
+			"column",
 			"table"
 		],
 		"cube": "AlertsByAgency",
 		"defaultTimeFilter": "Last 30 days",
 		"filters": [
-			{
-				"id": "alertCategoryNews",
-				"name": "Alert category : News & Publications"
-			}
-		]
+			"alertCategoryNews"
+		],
+		"baseUrl": ""
 	},
 	{
-		"id": "AlertsByAgencyFeed",
+		"id": "AgencyUpdatesAgencyFeed",
 		"description": "Displays the number of feeds per jurisdiction for the latest 4 quarters",
-		"name": "Alerts by Agency Feed",
+		"name": "Agency Updates by Agency Feed",
 		"type": "System",
 		"viewType": [
 			"table"
 		],
-		"cube": "AlertsByAgencyFeed",
-		"defaultTimeFilter": "Last 4 quarters"
+		"cube": "AgencyUpdatesAgencyFeed",
+		"defaultTimeFilter": "Last 4 quarters",
+		"baseUrl": ""
 	},
 	{
-		"id": "ActiveBillsByJurisdictionAndByStatus",
+		"id": "BillsJurisdictionStatus",
 		"description": "Displays the number of active bills as per their jurisdiction and status",
-		"name": "Active Bills by Jurisdiction and by Status",
+		"name": "Bills by Jurisdiction and Status",
 		"type": "System",
 		"viewType": [
+			"column",
+			"bar",
 			"table"
 		],
-		"cube": "ActiveBillsByJurisdictionAndByStatus",
-		"defaultTimeFilter": "Last 30 days"
+		"cube": "BillsJurisdictionStatus",
+		"defaultTimeFilter": "Last 30 days",
+		"baseUrl": ""
+	},
+	{
+		"id": "AlertsJurisdictionDocumentStatus",
+		"description": "Displays all alerts by document status and jurisdiction",
+		"name": "Alerts by Jurisdiction by Document Status",
+		"type": "System",
+		"viewType": [
+			"map",
+			"table",
+			"bar"
+		],
+		"cube": "AlertsJurisdictionDocumentStatus",
+		"defaultTimeFilter": "Last 90 days",
+		"baseUrl": ""
+	},
+	{
+		"id": "BillsDocStatus",
+		"description": "Displays the number of document status wise bill alerts against jurisdiction",
+		"name": "Bills by Doc Status",
+		"type": "System",
+		"viewType": [
+			"map",
+			"table",
+			"bar"
+		],
+		"cube": "BillsDocStatus",
+		"defaultTimeFilter": "Last 90 days",
+		"baseUrl": ""
 	},
 	{
 		"id": "EnforcementActionReport",
@@ -247,10 +358,12 @@
 		"name": "Enforcement Actions Report",
 		"type": "System",
 		"viewType": [
+			"pie",
 			"table"
 		],
 		"cube": "EnforcementActionReport",
-		"defaultTimeFilter": "Last 90 days"
+		"defaultTimeFilter": "Last 90 days",
+		"baseUrl": "/alerts/enforcement-actions"
 	},
 	{
 		"id": "PenaltiesAndRestitutions",
@@ -258,21 +371,26 @@
 		"name": "Penalties and Restitutions",
 		"type": "System",
 		"viewType": [
+			"column",
+			"bar",
 			"table"
 		],
 		"cube": "PenaltiesAndRestitutions",
-		"defaultTimeFilter": "Last 4 quarters"
+		"defaultTimeFilter": "Last 4 quarters",
+		"baseUrl": "/alerts/enforcement-actions"
 	},
 	{
 		"id": "ActionsByAgency",
-		"description": "Displays the number of enforcement actions by an agency and by action type for latest 4 quarters",
+		"description": "Lists a breakdown of enforcement actions from several agencies.",
 		"name": "Actions by Agency",
 		"type": "System",
 		"viewType": [
+			"column",
 			"table"
 		],
 		"cube": "ActionsByAgency",
-		"defaultTimeFilter": "Last 90 days"
+		"defaultTimeFilter": "Last 90 days",
+		"baseUrl": "/alerts/enforcement-actions"
 	},
 	{
 		"id": "NoOfEnforcementActions",
@@ -280,10 +398,14 @@
 		"name": "# of Enforcement Actions",
 		"type": "System",
 		"viewType": [
+			"bar",
+			"column",
+			"pie",
 			"table"
 		],
 		"cube": "NoOfEnforcementActions",
-		"defaultTimeFilter": "Last 4 quarters"
+		"defaultTimeFilter": "Last 4 quarters",
+		"baseUrl": "/alerts/enforcement-actions"
 	},
 	{
 		"id": "AuthoritativeDocumentsImpacted",
@@ -294,7 +416,8 @@
 			"table"
 		],
 		"cube": "AuthoritativeDocumentsImpacted",
-		"defaultTimeFilter": "Last 4 quarters"
+		"defaultTimeFilter": "Last 4 quarters",
+		"baseUrl": "/alerts/enforcement-actions"
 	},
 	{
 		"id": "RisksByStatus",
@@ -303,8 +426,11 @@
 		"type": "System",
 		"cube": "RisksByStatus",
 		"viewType": [
+			"bar",
+			"column",
 			"pie"
-		]
+		],
+		"baseUrl": "/risks"
 	},
 	{
 		"id": "ControlsByStatus",
@@ -313,8 +439,11 @@
 		"type": "System",
 		"cube": "ControlsByStatus",
 		"viewType": [
+			"bar",
+			"column",
 			"pie"
-		]
+		],
+		"baseUrl": "/controls"
 	},
 	{
 		"id": "TasksByStatus",
@@ -323,27 +452,139 @@
 		"type": "System",
 		"cube": "TasksByStatus",
 		"viewType": [
+			"bar",
+			"column",
 			"pie"
-		]
+		],
+		"baseUrl": "/tasks"
 	},
 	{
 		"id": "OwnersOfRisksControlsTasks",
-		"description": "Shows the total number of Risks, Controls, and Tasks owned by each user.",
+		"description": "Shows the total number of Risks, Controls, and Tasks owned by each owner.",
 		"name": "Owners of Risks, Controls & Tasks",
 		"type": "System",
 		"cube": "OwnersOfRisksControlsTasks",
 		"viewType": [
+			"pie",
+			"bar",
+			"column",
 			"table"
 		]
 	},
 	{
 		"id": "TasksOverdue",
-		"description": "Displays the total number of tasks with their overdue time",
+		"description": "Displays the total number of tasks overdue as well as the amount of time overdue.",
 		"name": "Tasks Overdue",
 		"type": "System",
 		"cube": "TasksOverdue",
 		"viewType": [
+			"column",
+			"bar",
+			"pie",
 			"table"
+		],
+		"baseUrl": "/tasks"
+	},
+	{
+		"id": "ImpactAssessmentByOwners",
+		"description": "Displays the number of impact assessments by owners.",
+		"name": "Impact Assessment by Owners",
+		"type": "System",
+		"defaultTimeFilter": "Last 90 days",
+		"cube": "ImpactAssessmentByOwners",
+		"viewType": [
+			"pie"
 		]
+	},
+	{
+		"id": "ImpactAssessmentByStatus",
+		"description": "Displays the number of impact assessments by status over the last 12 months.",
+		"name": "Impact Assessment by Status",
+		"type": "System",
+		"cube": "ImpactAssessmentByStatus",
+		"viewType": [
+			"line"
+		]
+	},
+	{
+		"id": "ImpactAssessmentByImpactLevel",
+		"description": "Displays the number of impact assessments by impact level over the last 12 months.",
+		"name": "Impact Assessment by Impact Level",
+		"type": "System",
+		"cube": "ImpactAssessmentByImpactLevel",
+		"viewType": [
+			"line"
+		]
+	},
+	{
+		"id": "ImpactAssessmentByImpactedTeam",
+		"description": "Displays the number of impact assessments by the impacted teams.",
+		"name": "Impact Assessment by Impacted Team",
+		"type": "System",
+		"cube": "ImpactAssessmentByImpactedTeam",
+		"viewType": [
+			"pie"
+		]
+	},
+	{
+		"id": "AlertsByGroup",
+		"description": "Displays the number of alerts assigned to user groups by workflow status",
+		"name": "Alerts by Groups",
+		"type": "System",
+		"viewType": [
+			"column",
+			"table"
+		],
+		"cube": "AlertsByGroups",
+		"defaultTimeFilter": "Last 90 days",
+		"baseUrl": ""
+	},
+	{
+		"id": "BillsGroup",
+		"description": "Displays the number of alerts assigned to user groups by workflow status",
+		"name": "Bills by Groups",
+		"type": "System",
+		"viewType": [
+			"column",
+			"table"
+		],
+		"cube": "AlertsByGroups",
+		"defaultTimeFilter": "Last 90 days",
+		"filters": [
+			"alertCategoryGroupsBills"
+		],
+		"baseUrl": ""
+	},
+	{
+		"id": "RegulatoryChangesGroup",
+		"description": "Displays the number of alerts assigned to user groups by workflow status",
+		"name": "Regulatory Changes by Groups",
+		"type": "System",
+		"viewType": [
+			"column",
+			"table"
+		],
+		"cube": "AlertsByGroups",
+		"defaultTimeFilter": "Last 90 days",
+		"filters": [
+			"alertCategoryGroupsLaws"
+		],
+		"baseUrl": ""
+	},
+	{
+		"id": "AgencyUpdatesGroup",
+		"description": "Displays the number of alerts assigned to user groups by workflow status",
+		"name": "Agency Updates by Groups",
+		"type": "System",
+		"viewType": [
+			"column",
+			"table"
+		],
+		"cube": "AlertsByGroups",
+		"defaultTimeFilter": "Last 90 days",
+		"filters": [
+			"alertCategoryGroupsNews"
+		],
+		"baseUrl": ""
 	}
 ]

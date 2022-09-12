@@ -19,13 +19,14 @@ let updatedWidgetsCollection = widgetsCollection.map((item) => {
 
 updatedWidgetsCollection.filter(item => item["filters"]).forEach((item) => {
 	let itemFilters = item.filters;
-	itemFilters.forEach((itemFilter) => {
+	itemFilters.forEach((itemFilter,index) => {
 		for(let i = 0 ; i < filtersCollection.length ; i++){
-			if(filtersCollection[i]["id"] === itemFilter["id"] ){
-				itemFilter["id"] = filtersCollection[i]["_id"];
+			if(filtersCollection[i]["id"] === itemFilter ){
+				itemFilters[index] = filtersCollection[i]["_id"];
 			}
 		}
 	})
+	return {...item };
 })
 
 
