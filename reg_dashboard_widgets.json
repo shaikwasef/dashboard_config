@@ -318,6 +318,7 @@
 		"viewType": [
 			"column",
 			"bar",
+			"map",
 			"table"
 		],
 		"cube": "BillsJurisdictionStatus",
@@ -585,6 +586,18 @@
 		"filters": [
 			"alertCategoryGroupsNews"
 		],
+		"baseUrl": ""
+	},
+	{
+		"id": "ComplianceCoverage",
+		"description": "Displays the total number of regulations, laws and agency feeds by jurisdiction.",
+		"name": "Compliance Coverage",
+		"type": "System",
+		"viewType": [
+			"table",
+			"map"
+		],
+		"cube": "ComplianceCoverage",
 		"baseUrl": ""
 	}
 ]

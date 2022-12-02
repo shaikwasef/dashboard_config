@@ -1,8 +1,5 @@
 [
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e50"
-		},
 		"id": "alertCategoryBills",
 		"name": "Alert category : Bills",
 		"filter": {
@@ -14,9 +11,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e51"
-		},
 		"id": "alertCategoryLaws",
 		"name": "Alert category : Laws & Regulations",
 		"filter": {
@@ -28,9 +22,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e52"
-		},
 		"id": "alertCategoryNews",
 		"name": "Alert category : News & Publications",
 		"filter": {
@@ -42,9 +33,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e53"
-		},
 		"id": "alertTopicLaws",
 		"name": "Alert topic : Laws & Regulations",
 		"filter": {
@@ -56,9 +44,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e54"
-		},
 		"id": "alertCategoryOwnersBills",
 		"name": "Alert category Owners : Bills",
 		"filter": {
@@ -70,9 +55,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e55"
-		},
 		"id": "alertCategoryOwnersLaws",
 		"name": "Alert category Owners : Laws and Regulations",
 		"filter": {
@@ -84,9 +66,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e56"
-		},
 		"id": "alertCategoryOwnersNews",
 		"name": "Alert category : News & Publications",
 		"filter": {
@@ -98,9 +77,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e57"
-		},
 		"id": "alertCategoryGroupsBills",
 		"name": "Alert category Groups : Bills",
 		"filter": {
@@ -112,9 +88,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e58"
-		},
 		"id": "alertCategoryGroupsLaws",
 		"name": "Alert category Groups : Laws and Regulations",
 		"filter": {
@@ -126,9 +99,6 @@
 		}
 	},
 	{
-		"_id": {
-			"$oid": "637271fea5802c9ffb2d2e59"
-		},
 		"id": "alertCategoryGroupsNews",
 		"name": "Alert category Groups: News & Publications",
 		"filter": {

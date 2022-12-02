@@ -2,8 +2,12 @@ var fs = require('fs');
 
 const dashboardsCollection = require('./reg_dashboards');
 const widgetsCollection = require('./reg_dashboard_widgets_mongo.json');
+const { myTenantId } = require('./constants');
+
+const {ObjectId} = require('mongodb'); 
 
 let updateddashboardsCollection = dashboardsCollection.map((item) => {
+	const myId = new ObjectId();
 	let widgets = item["widgets"];
 	widgets.forEach((widget) => {
 		for(let i = 0 ; i < widgetsCollection.length ; i++){
@@ -19,11 +23,10 @@ let updateddashboardsCollection = dashboardsCollection.map((item) => {
 			"viewType" : item.viewType
 		}
 	})
-	const tenantId  = "60bdf4253f08118fcef4f30a";
-	const updatedItem = {...item , "widgets" : widgetsItem  , "tenantId" : tenantId }
+	const updatedItem = {...item , "widgets" : widgetsItem  , "tenantId" : myTenantId ,  "_id" : {"$oid": myId}}
 	return updatedItem;
 })
 
-fs.writeFile("reg_dashboards_post_script.json",JSON.stringify(updateddashboardsCollection),function(err, result) {
+fs.writeFile("reg_dashboards_mongo.json",JSON.stringify(updateddashboardsCollection),function(err, result) {
     if(err) console.log('error', err);
 });

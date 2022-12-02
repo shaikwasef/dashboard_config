@@ -102,9 +102,10 @@
 				"viewType": [
 					"column",
 					"bar",
+					"map",
 					"table"
 				],
-				"defaultTimeFilter": "Last 30 days"
+				"defaultTimeFilter": "Last 90 days"
 			},
 			{
 				"layout": {
@@ -182,6 +183,7 @@
 				"viewType": [
 					"column",
 					"bar",
+					"map",
 					"table"
 				],
 				"defaultTimeFilter": "Last 90 days"

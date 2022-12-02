@@ -1,10 +1,13 @@
 var fs = require('fs');
 
 const cubesCollection = require('./reg_dashboard_cubes');
-const filtersCollection = require('./reg_dashboard_filters');
+const filtersCollection = require('./reg_dashboard_filters_mongo');
+const { myTenantId } = require('./constants');
+const {ObjectId} = require('mongodb'); 
 
 
 const updatedCollection = cubesCollection.map((item) => {
+	const myId = new ObjectId();
 	let cubeFilters = item.applicableFilters;
 	cubeFilters.forEach((cubeFilter,index) => {
 		for(let i = 0 ; i < filtersCollection.length ; i++){
@@ -13,11 +16,10 @@ const updatedCollection = cubesCollection.map((item) => {
 			}
 		}
 	})
-	const tenantId  = "60bdf4253f08118fcef4f30a";
-	const updatedItem = {...item , "tenantId" : tenantId }
+	const updatedItem = {...item , "tenantId" : myTenantId , "_id" : {"$oid": myId }};
 	return updatedItem;
 })
 
-fs.writeFile("reg_dashboard_cubes_post_script.json",JSON.stringify(updatedCollection),function(err, result) {
+fs.writeFile("reg_dashboard_cubes_mongo.json",JSON.stringify(updatedCollection),function(err, result) {
     if(err) console.log('error', err);
 });

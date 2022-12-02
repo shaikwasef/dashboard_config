@@ -789,6 +789,10 @@
 			{
 				"langKey": "i18n_LBL_AGENCY_UPDATES_STATUS",
 				"entity": "AlertsCube.agencyUpdateStatus"
+			},
+			{
+				"langKey": "i18n_LBL_ALERTS_JURISDICTION_NAME",
+				"entity": "JurisdictionsCube.displayName"
 			}
 		],
 		"applicableFilters": [],
@@ -1671,6 +1675,10 @@
 				[
 					"ImpactAssessmentCube.count",
 					"desc"
+				],
+				[
+					"Users.fullName",
+					"asc"
 				]
 			]
 		},
@@ -1847,9 +1855,16 @@
 				}
 			],
 			"limit": 1000,
-			"order": {
-				"ImpactAssessmentCube.count": "desc"
-			}
+			"order": [
+				[
+					"ImpactAssessmentCube.count",
+					"desc"
+				],
+				[
+					"ImpactedAssessmentImpactedTeamCube.impactedTeam",
+					"asc"
+				]
+			]
 		},
 		"meta": {
 			"pivotConfig": {
@@ -1871,6 +1886,54 @@
 			{
 				"langKey": "i18n_LBL_IMPACTED_TEAM",
 				"entity": "ImpactAssessmentImpactedTeamCube.impactedTeam"
+			}
+		],
+		"applicableFilters": [],
+		"routerParams": []
+	},
+	{
+		"id": "ComplianceCoverage",
+		"category": "Coverage",
+		"name": "Compliance Coverage",
+		"query": {
+			"dimensions": [
+				"CoverageByJurisdictionCube.jurisdictionName",
+				"CoverageByJurisdictionCube.status"
+			],
+			"timeDimensions": [],
+			"order": {
+				"CoverageByJurisdictionCube.count": "desc"
+			},
+			"measures": [
+				"CoverageByJurisdictionCube.count"
+			],
+			"filters": [
+				{
+					"member": "CoverageByJurisdictionCube.jurisdictionName",
+					"operator": "set"
+				}
+			]
+		},
+		"meta": {
+			"pivotConfig": {
+				"joinDateRange": false,
+				"fillMissingDates": true,
+				"y": [
+					"measures"
+				],
+				"x": [
+					"CoverageByJurisdictionCube.jurisdictionName"
+				]
+			}
+		},
+		"langMapping": [
+			{
+				"langKey": "i18n_LBL_CONST_TOTAL",
+				"entity": "CoverageByJurisdictionCube.count"
+			},
+			{
+				"langKey": "i18n_LBL_ALERTS_JURISDICTION_NAME",
+				"entity": "CoverageByJurisdictionCube.jurisdictionName"
 			}
 		],
 		"applicableFilters": [],

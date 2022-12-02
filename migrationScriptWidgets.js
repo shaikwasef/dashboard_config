@@ -3,8 +3,12 @@ var fs = require('fs');
 const cubesCollection = require('./reg_dashboard_cubes_mongo');
 const filtersCollection = require('./reg_dashboard_filters');
 const widgetsCollection = require('./reg_dashboard_widgets');
+const { myTenantId } = require('./constants');
+
+const {ObjectId} = require('mongodb'); 
 
 let updatedWidgetsCollection = widgetsCollection.map((item) => {
+	const myId = new ObjectId();
 	let cube = item["cube"];
 	for(let i = 0 ; i < cubesCollection.length ; i++ ){
 		if(cubesCollection[i]["id"] === cube ){
@@ -12,8 +16,7 @@ let updatedWidgetsCollection = widgetsCollection.map((item) => {
 				break;
 			}
 	}
-	const tenantId  = "60bdf4253f08118fcef4f30a";
-	item = {...item  , "cube" : cube , "tenantId" : tenantId }
+	item = {...item  , "cube" : cube , "tenantId" : myTenantId , "_id" : {"$oid": myId }}
 	return item;
 })
 
@@ -31,6 +34,6 @@ updatedWidgetsCollection.filter(item => item["filters"]).forEach((item) => {
 
 
 
-fs.writeFile("reg_dashboard_widgets_post_script.json",JSON.stringify(updatedWidgetsCollection),function(err, result) {
+fs.writeFile("reg_dashboard_widgets_mongo.json",JSON.stringify(updatedWidgetsCollection),function(err, result) {
     if(err) console.log('error', err);
 });
