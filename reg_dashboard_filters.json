@@ -87,7 +87,7 @@
 			]
 		}
 	},
-	{
+		{
 		"id": "alertCategoryGroupsLaws",
 		"name": "Alert category Groups : Laws and Regulations",
 		"filter": {

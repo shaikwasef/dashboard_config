@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 const filtersCollection = require('./reg_dashboard_filters');
-const { myTenantId } = require('./constants');
+const  myTenantId  = require('./constants');
 
 const {ObjectId} = require('mongodb'); 
 
