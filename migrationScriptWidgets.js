@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 const cubesCollection = require('./reg_dashboard_cubes_mongo');
-const filtersCollection = require('./reg_dashboard_filters');
+const filtersCollection = require('./reg_dashboard_filters_mongo');
 const widgetsCollection = require('./reg_dashboard_widgets');
 const { myTenantId } = require('./constants');
 
