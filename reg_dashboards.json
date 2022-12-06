@@ -573,7 +573,9 @@
 				},
 				"widgetId": "ImpactAssessmentByOwners",
 				"viewType": [
-					"pie"
+					"pie",
+					"column",
+					"table"
 				],
 				"defaultTimeFilter": "Last 90 days"
 			},
@@ -586,7 +588,8 @@
 				},
 				"widgetId": "ImpactAssessmentByStatus",
 				"viewType": [
-					"line"
+					"line",
+					"column"
 				]
 			},
 			{
@@ -598,7 +601,8 @@
 				},
 				"widgetId": "ImpactAssessmentByImpactLevel",
 				"viewType": [
-					"line"
+					"line",
+					"column"
 				]
 			},
 			{
@@ -610,7 +614,9 @@
 				},
 				"widgetId": "ImpactAssessmentByImpactedTeam",
 				"viewType": [
-					"pie"
+					"pie",
+					"column",
+					"table"
 				],
 				"defaultTimeFilter": "Last 90 days"
 			}

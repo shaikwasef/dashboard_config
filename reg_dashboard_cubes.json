@@ -725,9 +725,12 @@
 					"dateRange": "This year"
 				}
 			],
-			"order": {
-				"AlertsCube.publishedDate": "asc"
-			},
+			"order": [
+				[
+					"AlertsCube.publishedDate",
+					"asc"
+				]
+			],
 			"measures": [
 				"AlertsCube.introducedDocStatus",
 				"AlertsCube.originDocStatus",
@@ -817,9 +820,12 @@
 					"dateRange": "This year"
 				}
 			],
-			"order": {
-				"AlertsCube.introducedBills": "desc"
-			},
+			"order": [
+				[
+					"AlertsCube.introducedBills",
+					"desc"
+				]
+			],
 			"filters": [
 				{
 					"member": "AlertsCube.totalBillsDocStatus",
@@ -1705,7 +1711,18 @@
 			}
 		],
 		"applicableFilters": [],
-		"routerParams": []
+		"routerParams": [
+			{
+				"dimension": "Users.fullName",
+				"filter": "user",
+				"cubejsQuery": {
+					"dimensions": [
+						"Users._id"
+					]
+				},
+				"api": "/users"
+			}
+		]
 	},
 	{
 		"id": "ImpactAssessmentByImpactLevel",
@@ -1772,7 +1789,32 @@
 			}
 		],
 		"applicableFilters": [],
-		"routerParams": []
+		"routerParams": [
+				{
+					"dimension": "ImpactAssessmentCube.startDate",
+					"filter": "startDate"
+				},
+				{
+					"dimension": "ImpactAssessmentCube.noImpact",
+					"filter": "impactLevel"
+				},
+				{
+					"dimension": "ImpactAssessmentCube.low",
+					"filter": "impactLevel"
+				},
+				{
+					"dimension": "ImpactAssessmentCube.medium",
+					"filter": "impactLevel"
+				},
+				{
+					"dimension": "ImpactAssessmentCube.high",
+					"filter": "impactLevel"
+				},
+				{
+					"dimension": "ImpactAssessmentCube.critical",
+					"filter": "impactLevel"
+				}
+		]
 	},
 	{
 		"id": "ImpactAssessmentByStatus",
@@ -1828,7 +1870,24 @@
 			}
 		],
 		"applicableFilters": [],
-		"routerParams": []
+		"routerParams": [
+			{
+				"dimension": "ImpactAssessmentCube.startDate",
+				"filter": "startDate"
+			},
+			{
+				"dimension": "ImpactAssessmentCube.new",
+				"filter": "status"
+			},
+			{
+				"dimension": "ImpactAssessmentCube.inProcess",
+				"filter": "status"
+			},
+			{
+				"dimension": "ImpactAssessmentCube.closed",
+				"filter": "status"
+			}
+		]
 	},
 	{
 		"id": "ImpactAssessmentByImpactedTeam",
@@ -1861,7 +1920,7 @@
 					"desc"
 				],
 				[
-					"ImpactedAssessmentImpactedTeamCube.impactedTeam",
+					"ImpactAssessmentImpactedTeamCube.impactedTeam",
 					"asc"
 				]
 			]
@@ -1889,7 +1948,12 @@
 			}
 		],
 		"applicableFilters": [],
-		"routerParams": []
+		"routerParams": [
+			{
+      	"dimension": "ImpactAssessmentImpactedTeamCube.impactedTeam",
+      	"filter": "I_E_F_IMPACTED_TEAM"
+    	}
+		]
 	},
 	{
 		"id": "ComplianceCoverage",
@@ -1901,9 +1965,12 @@
 				"CoverageByJurisdictionCube.status"
 			],
 			"timeDimensions": [],
-			"order": {
-				"CoverageByJurisdictionCube.count": "desc"
-			},
+			"order": [
+				[
+					"CoverageByJurisdictionCube.count",
+					"desc"
+				]
+			],
 			"measures": [
 				"CoverageByJurisdictionCube.count"
 			],

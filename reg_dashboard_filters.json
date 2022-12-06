@@ -1,7 +1,18 @@
 [
 	{
+		"id": "alertCategoryAll",
+		"name": "i18n_LBL_ALL_ALERTS",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsCube.alertCategory",
+			"operator": "set",
+			"values": []
+		}
+	},
+	{
 		"id": "alertCategoryBills",
-		"name": "Alert category : Bills",
+		"name": "i18n_LBL_ALERTS_BILLS",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsCube.alertCategory",
 			"operator": "equals",
@@ -12,7 +23,8 @@
 	},
 	{
 		"id": "alertCategoryLaws",
-		"name": "Alert category : Laws & Regulations",
+		"name": "i18n_LBL_ALERTS_LAWS_AND_REGULATIONS",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsCube.alertCategory",
 			"operator": "equals",
@@ -23,7 +35,8 @@
 	},
 	{
 		"id": "alertCategoryNews",
-		"name": "Alert category : News & Publications",
+		"name": "i18n_LBL_ALERTS_AGENCY_UPDATES",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsCube.alertCategory",
 			"operator": "equals",
@@ -35,6 +48,7 @@
 	{
 		"id": "alertTopicLaws",
 		"name": "Alert topic : Laws & Regulations",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsByTopic.alertCategory",
 			"operator": "equals",
@@ -46,6 +60,7 @@
 	{
 		"id": "alertCategoryOwnersBills",
 		"name": "Alert category Owners : Bills",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsByOwnersCube.alertCategory",
 			"operator": "equals",
@@ -57,6 +72,7 @@
 	{
 		"id": "alertCategoryOwnersLaws",
 		"name": "Alert category Owners : Laws and Regulations",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsByOwnersCube.alertCategory",
 			"operator": "equals",
@@ -67,7 +83,8 @@
 	},
 	{
 		"id": "alertCategoryOwnersNews",
-		"name": "Alert category : News & Publications",
+		"name": "Alert category Owners: News & Publications",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsByOwnersCube.alertCategory",
 			"operator": "equals",
@@ -79,6 +96,7 @@
 	{
 		"id": "alertCategoryGroupsBills",
 		"name": "Alert category Groups : Bills",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsByGroupsCube.alertCategory",
 			"operator": "equals",
@@ -87,9 +105,10 @@
 			]
 		}
 	},
-		{
+	{
 		"id": "alertCategoryGroupsLaws",
 		"name": "Alert category Groups : Laws and Regulations",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsByGroupsCube.alertCategory",
 			"operator": "equals",
@@ -101,6 +120,7 @@
 	{
 		"id": "alertCategoryGroupsNews",
 		"name": "Alert category Groups: News & Publications",
+		"category": "Alerts",
 		"filter": {
 			"member": "AlertsByGroupsCube.alertCategory",
 			"operator": "equals",

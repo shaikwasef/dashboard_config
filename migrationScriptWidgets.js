@@ -32,7 +32,17 @@ updatedWidgetsCollection.filter(item => item["filters"]).forEach((item) => {
 	return {...item };
 })
 
-
+updatedWidgetsCollection.filter(item => item["dropDownFilters"]).forEach((item) => {
+	let itemFilters = item.dropDownFilters;
+	itemFilters.forEach((itemFilter,index) => {
+		for(let i = 0 ; i < filtersCollection.length ; i++){
+			if(filtersCollection[i]["id"] === itemFilter ){
+				itemFilters[index] = filtersCollection[i]["_id"];
+			}
+		}
+	})
+	return {...item };
+})
 
 fs.writeFile("reg_dashboard_widgets_mongo.json",JSON.stringify(updatedWidgetsCollection),function(err, result) {
     if(err) console.log('error', err);

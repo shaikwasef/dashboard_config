@@ -322,7 +322,7 @@
 			"table"
 		],
 		"cube": "BillsJurisdictionStatus",
-		"defaultTimeFilter": "Last 30 days",
+		"defaultTimeFilter": "Last 90 days",
 		"baseUrl": ""
 	},
 	{
@@ -334,6 +334,12 @@
 			"map",
 			"table",
 			"bar"
+		],
+		"dropDownFilters": [
+			"alertCategoryAll",
+			"alertCategoryBills",
+			"alertCategoryLaws",
+			"alertCategoryNews"
 		],
 		"cube": "AlertsJurisdictionDocumentStatus",
 		"defaultTimeFilter": "Last 90 days",
@@ -494,8 +500,11 @@
 		"defaultTimeFilter": "Last 90 days",
 		"cube": "ImpactAssessmentByOwners",
 		"viewType": [
-			"pie"
-		]
+			"pie",
+			"column",
+			"table"
+		],
+		"baseUrl": "/alerts/impact-assessment"
 	},
 	{
 		"id": "ImpactAssessmentByStatus",
@@ -504,8 +513,10 @@
 		"type": "System",
 		"cube": "ImpactAssessmentByStatus",
 		"viewType": [
-			"line"
-		]
+			"line",
+			"column"
+		],
+		"baseUrl": "/alerts/impact-assessment"
 	},
 	{
 		"id": "ImpactAssessmentByImpactLevel",
@@ -514,18 +525,24 @@
 		"type": "System",
 		"cube": "ImpactAssessmentByImpactLevel",
 		"viewType": [
-			"line"
-		]
+			"line",
+			"column"
+		],
+		"baseUrl": "/alerts/impact-assessment"
 	},
 	{
 		"id": "ImpactAssessmentByImpactedTeam",
 		"description": "Displays the number of impact assessments by the impacted teams.",
 		"name": "Impact Assessment by Impacted Team",
 		"type": "System",
+		"defaultTimeFilter": "Last 90 days",
 		"cube": "ImpactAssessmentByImpactedTeam",
 		"viewType": [
-			"pie"
-		]
+			"pie",
+			"column",
+			"table"
+		],
+		"baseUrl": "/alerts/impact-assessment"
 	},
 	{
 		"id": "AlertsByGroup",
@@ -590,7 +607,7 @@
 	},
 	{
 		"id": "ComplianceCoverage",
-		"description": "Displays the total number of regulations, laws and agency feeds by jurisdiction.",
+		"description": "Displays the total number of regulations by jurisdiction.",
 		"name": "Compliance Coverage",
 		"type": "System",
 		"viewType": [
