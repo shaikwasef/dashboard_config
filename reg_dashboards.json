@@ -8,27 +8,30 @@
 		"order": 1,
 		"widgets": [
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d601a"
+				},
 				"layout": {
 					"x": 0,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByRegulation",
 				"viewType": [
 					"column",
 					"bar"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6022"
+				},
 				"layout": {
 					"x": 6,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByTimePeriod",
 				"viewType": [
 					"column",
 					"bar",
@@ -36,106 +39,118 @@
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d601e"
+				},
 				"layout": {
 					"x": 0,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsWorkflowStatus",
 				"viewType": [
 					"line",
 					"column"
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6026"
+				},
 				"layout": {
 					"x": 6,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByOwners",
 				"viewType": [
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d601c"
+				},
 				"layout": {
 					"x": 0,
 					"y": 4,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByCorpus",
 				"viewType": [
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d602a"
+				},
 				"layout": {
 					"x": 6,
 					"y": 4,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AlertsByAgency",
 				"viewType": [
 					"bar",
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 30 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d602f"
+				},
 				"layout": {
 					"x": 0,
 					"y": 6,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "BillsJurisdictionStatus",
 				"viewType": [
 					"column",
 					"bar",
 					"map",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d602e"
+				},
 				"layout": {
 					"x": 6,
 					"y": 6,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AgencyUpdatesAgencyFeed",
 				"viewType": [
 					"table"
-				],
-				"defaultTimeFilter": "Last 4 quarters"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6030"
+				},
 				"layout": {
 					"x": 0,
 					"y": 8,
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "AlertsJurisdictionDocumentStatus",
 				"viewType": [
 					"map",
 					"table",
 					"bar"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26ccef94f312153ed89b4"
+		}
 	},
 	{
 		"id": "BillAlerts",
@@ -146,13 +161,15 @@
 		"order": 2,
 		"widgets": [
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6023"
+				},
 				"layout": {
 					"x": 0,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "BillsTimePeriod",
 				"viewType": [
 					"column",
 					"bar",
@@ -160,64 +177,73 @@
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d601f"
+				},
 				"layout": {
 					"x": 6,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "BillsWorkflowStatus",
 				"viewType": [
 					"line",
 					"column"
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d602f"
+				},
 				"layout": {
 					"x": 0,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "BillsJurisdictionStatus",
 				"viewType": [
 					"column",
 					"bar",
 					"map",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6027"
+				},
 				"layout": {
 					"x": 6,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "BillsOwner",
 				"viewType": [
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6031"
+				},
 				"layout": {
 					"x": 0,
 					"y": 4,
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "BillsDocStatus",
 				"viewType": [
 					"map",
 					"table",
 					"bar"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26ccef94f312153ed89b5"
+		}
 	},
 	{
 		"id": "RegulatoryChange",
@@ -228,27 +254,30 @@
 		"order": 3,
 		"widgets": [
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d601b"
+				},
 				"layout": {
 					"x": 0,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "RegulatoryChangesTopic",
 				"viewType": [
 					"column",
 					"bar"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6024"
+				},
 				"layout": {
 					"x": 6,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "RegulatoryChangesTimePeriod",
 				"viewType": [
 					"column",
 					"bar",
@@ -256,62 +285,71 @@
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6020"
+				},
 				"layout": {
 					"x": 0,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "RegulatoryChangesWorkflowStatus",
 				"viewType": [
 					"line",
 					"column"
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6028"
+				},
 				"layout": {
 					"x": 6,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "RegulatoryChangesOwner",
 				"viewType": [
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d601d"
+				},
 				"layout": {
 					"x": 0,
 					"y": 4,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "RegulatoryChangesCorpus",
 				"viewType": [
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d602c"
+				},
 				"layout": {
 					"x": 6,
 					"y": 4,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "RegulatoryChangesAgency",
 				"viewType": [
 					"bar",
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 30 days"
+				]
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26ccef94f312153ed89b6"
+		}
 	},
 	{
 		"id": "AgencyUpdate",
@@ -322,28 +360,31 @@
 		"order": 4,
 		"widgets": [
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d602d"
+				},
 				"layout": {
 					"x": 0,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AgencyUpdatesAgency",
 				"viewType": [
 					"bar",
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 30 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6025"
+				},
 				"layout": {
 					"x": 6,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AgencyUpdatesTimePeriod",
 				"viewType": [
 					"column",
 					"bar",
@@ -351,46 +392,54 @@
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6021"
+				},
 				"layout": {
 					"x": 0,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AgencyUpdatesWorkflowStatus",
 				"viewType": [
 					"line",
 					"column"
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6029"
+				},
 				"layout": {
 					"x": 6,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AgencyUpdatesOwner",
 				"viewType": [
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d602e"
+				},
 				"layout": {
 					"x": 0,
 					"y": 4,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "AgencyUpdatesAgencyFeed",
 				"viewType": [
 					"table"
-				],
-				"defaultTimeFilter": "Last 4 quarters"
+				]
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26ccef94f312153ed89b7"
+		}
 	},
 	{
 		"id": "EnforcementActionsOverview",
@@ -401,78 +450,87 @@
 		"order": 5,
 		"widgets": [
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6032"
+				},
 				"layout": {
 					"x": 0,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "EnforcementActionReport",
 				"viewType": [
 					"pie",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6035"
+				},
 				"layout": {
 					"x": 0,
 					"y": 2,
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "NoOfEnforcementActions",
 				"viewType": [
 					"bar",
 					"column",
 					"pie",
 					"table"
-				],
-				"defaultTimeFilter": "Last 4 quarters"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6033"
+				},
 				"layout": {
 					"x": 0,
 					"y": 4,
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "PenaltiesAndRestitutions",
 				"viewType": [
 					"column",
 					"bar",
 					"table"
-				],
-				"defaultTimeFilter": "Last 4 quarters"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6034"
+				},
 				"layout": {
 					"x": 0,
 					"y": 6,
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "ActionsByAgency",
 				"viewType": [
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6036"
+				},
 				"layout": {
 					"x": 0,
 					"y": 8,
 					"w": 12,
 					"h": 2
 				},
-				"widgetId": "AuthoritativeDocumentsImpacted",
 				"viewType": [
 					"table"
-				],
-				"defaultTimeFilter": "Last 4 quarters"
+				]
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26ccef94f312153ed89b8"
+		}
 	},
 	{
 		"id": "ComplianceDashboard",
@@ -483,13 +541,15 @@
 		"order": 6,
 		"widgets": [
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6037"
+				},
 				"layout": {
 					"x": 0,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "RisksByStatus",
 				"viewType": [
 					"bar",
 					"column",
@@ -497,13 +557,15 @@
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6038"
+				},
 				"layout": {
 					"x": 6,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ControlsByStatus",
 				"viewType": [
 					"bar",
 					"column",
@@ -511,13 +573,15 @@
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d6039"
+				},
 				"layout": {
 					"x": 0,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "TasksByStatus",
 				"viewType": [
 					"bar",
 					"column",
@@ -525,13 +589,15 @@
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d603a"
+				},
 				"layout": {
 					"x": 6,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "OwnersOfRisksControlsTasks",
 				"viewType": [
 					"pie",
 					"bar",
@@ -540,13 +606,15 @@
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d603b"
+				},
 				"layout": {
 					"x": 0,
 					"y": 4,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "TasksOverdue",
 				"viewType": [
 					"column",
 					"bar",
@@ -554,7 +622,11 @@
 					"table"
 				]
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26ccef94f312153ed89b9"
+		}
 	},
 	{
 		"id": "ImpactAssessmentDashboard",
@@ -565,61 +637,71 @@
 		"order": 7,
 		"widgets": [
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d603c"
+				},
 				"layout": {
 					"x": 0,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ImpactAssessmentByOwners",
 				"viewType": [
 					"pie",
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d603d"
+				},
 				"layout": {
 					"x": 6,
 					"y": 0,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ImpactAssessmentByStatus",
 				"viewType": [
 					"line",
 					"column"
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d603e"
+				},
 				"layout": {
 					"x": 0,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ImpactAssessmentByImpactLevel",
 				"viewType": [
 					"line",
 					"column"
 				]
 			},
 			{
+				"widget": {
+					"$oid": "63a26cbfb6408ada4b2d603f"
+				},
 				"layout": {
 					"x": 6,
 					"y": 2,
 					"w": 6,
 					"h": 2
 				},
-				"widgetId": "ImpactAssessmentByImpactedTeam",
 				"viewType": [
 					"pie",
 					"column",
 					"table"
-				],
-				"defaultTimeFilter": "Last 90 days"
+				]
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26ccef94f312153ed89ba"
+		}
 	}
 ]

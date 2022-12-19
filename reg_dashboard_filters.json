@@ -7,6 +7,10 @@
 			"member": "AlertsCube.alertCategory",
 			"operator": "set",
 			"values": []
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb717"
 		}
 	},
 	{
@@ -19,6 +23,10 @@
 			"values": [
 				"Bills"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb718"
 		}
 	},
 	{
@@ -31,6 +39,10 @@
 			"values": [
 				"Laws & Regulations"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb719"
 		}
 	},
 	{
@@ -43,6 +55,10 @@
 			"values": [
 				"News & Publications"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb71a"
 		}
 	},
 	{
@@ -55,6 +71,10 @@
 			"values": [
 				"Laws & Regulations"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb71b"
 		}
 	},
 	{
@@ -67,6 +87,10 @@
 			"values": [
 				"Bills"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb71c"
 		}
 	},
 	{
@@ -79,6 +103,10 @@
 			"values": [
 				"Laws & Regulations"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb71d"
 		}
 	},
 	{
@@ -91,6 +119,10 @@
 			"values": [
 				"News & Publications"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb71e"
 		}
 	},
 	{
@@ -103,6 +135,10 @@
 			"values": [
 				"Bills"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb71f"
 		}
 	},
 	{
@@ -115,6 +151,10 @@
 			"values": [
 				"Laws & Regulations"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb720"
 		}
 	},
 	{
@@ -127,6 +167,10 @@
 			"values": [
 				"News & Publications"
 			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cb410c1291c5baeb721"
 		}
 	}
 ]

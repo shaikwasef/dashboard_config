@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 const cubesCollection = require('./reg_dashboard_cubes');
-const filtersCollection = require('./reg_dashboard_filters_mongo');
+const filtersCollection = require('./reg_dashboard_filters');
 const { myTenantId } = require('./constants');
 const {ObjectId} = require('mongodb'); 
 
@@ -20,6 +20,8 @@ const updatedCollection = cubesCollection.map((item) => {
 	return updatedItem;
 })
 
-fs.writeFile("reg_dashboard_cubes_mongo.json",JSON.stringify(updatedCollection),function(err, result) {
+fs.unlinkSync('reg_dashboard_cubes.json');
+
+fs.writeFile("reg_dashboard_cubes.json",JSON.stringify(updatedCollection),function(err, result) {
     if(err) console.log('error', err);
 });

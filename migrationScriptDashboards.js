@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 const dashboardsCollection = require('./reg_dashboards');
-const widgetsCollection = require('./reg_dashboard_widgets_mongo.json');
+const widgetsCollection = require('./reg_dashboard_widgets.json');
 const { myTenantId } = require('./constants');
 
 const {ObjectId} = require('mongodb'); 
@@ -27,6 +27,8 @@ let updateddashboardsCollection = dashboardsCollection.map((item) => {
 	return updatedItem;
 })
 
-fs.writeFile("reg_dashboards_mongo.json",JSON.stringify(updateddashboardsCollection),function(err, result) {
+fs.unlinkSync('reg_dashboards.json');
+
+fs.writeFile("reg_dashboards.json",JSON.stringify(updateddashboardsCollection),function(err, result) {
     if(err) console.log('error', err);
 });

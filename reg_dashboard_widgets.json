@@ -8,9 +8,15 @@
 			"column",
 			"bar"
 		],
-		"cube": "AlertsByRegulation",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135d"
+		},
 		"defaultTimeFilter": "Last 90 days",
-		"baseUrl": ""
+		"baseUrl": "",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d601a"
+		}
 	},
 	{
 		"id": "RegulatoryChangesTopic",
@@ -21,12 +27,20 @@
 			"column",
 			"bar"
 		],
-		"cube": "AlertsByRegulation",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135d"
+		},
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			"alertTopicLaws"
+			{
+				"$oid": "63a26cb410c1291c5baeb71b"
+			}
 		],
-		"baseUrl": ""
+		"baseUrl": "",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d601b"
+		}
 	},
 	{
 		"id": "AlertsByCorpus",
@@ -37,9 +51,15 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByCorpus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1360"
+		},
 		"defaultTimeFilter": "Last 90 days",
-		"baseUrl": "/alerts/all-alerts"
+		"baseUrl": "/alerts/all-alerts",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d601c"
+		}
 	},
 	{
 		"id": "RegulatoryChangesCorpus",
@@ -50,130 +70,198 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByCorpus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1360"
+		},
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			"alertCategoryLaws"
+			{
+				"$oid": "63a26cb410c1291c5baeb719"
+			}
 		],
-		"baseUrl": "/alerts/regulatory-changes"
+		"baseUrl": "/alerts/regulatory-changes",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d601d"
+		}
 	},
 	{
 		"id": "AlertsWorkflowStatus",
 		"name": "Alerts by Workflow Status",
 		"description": "Displays the number of alerts in each workflow status over the last 12 months.",
 		"type": "System",
-		"cube": "AlertsWorkflowStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135f"
+		},
 		"viewType": [
 			"line",
 			"column"
 		],
-		"baseUrl": "/alerts/all-alerts"
+		"baseUrl": "/alerts/all-alerts",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d601e"
+		}
 	},
 	{
 		"id": "BillsWorkflowStatus",
 		"name": "Bills by Workflow Status",
 		"description": "Displays the number of alerts in each workflow status over the last 12 months.",
 		"type": "System",
-		"cube": "AlertsWorkflowStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135f"
+		},
 		"viewType": [
 			"line",
 			"column"
 		],
 		"filters": [
-			"alertCategoryBills"
+			{
+				"$oid": "63a26cb410c1291c5baeb718"
+			}
 		],
-		"baseUrl": "/alerts/horizon-scanning"
+		"baseUrl": "/alerts/horizon-scanning",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d601f"
+		}
 	},
 	{
 		"id": "RegulatoryChangesWorkflowStatus",
 		"name": "Regulatory Changes by Workflow Status",
 		"description": "Displays the number of alerts in each workflow status over the last 12 months.",
 		"type": "System",
-		"cube": "AlertsWorkflowStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135f"
+		},
 		"viewType": [
 			"line",
 			"column"
 		],
 		"filters": [
-			"alertCategoryLaws"
+			{
+				"$oid": "63a26cb410c1291c5baeb719"
+			}
 		],
-		"baseUrl": "/alerts/regulatory-changes"
+		"baseUrl": "/alerts/regulatory-changes",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6020"
+		}
 	},
 	{
 		"id": "AgencyUpdatesWorkflowStatus",
 		"name": "Agency Updates by Workflow Status",
 		"description": "Displays the number of alerts in each workflow status over the last 12 months.",
 		"type": "System",
-		"cube": "AlertsWorkflowStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135f"
+		},
 		"viewType": [
 			"line",
 			"column"
 		],
 		"filters": [
-			"alertCategoryNews"
+			{
+				"$oid": "63a26cb410c1291c5baeb71a"
+			}
 		],
-		"baseUrl": "/alerts/agency-updates"
+		"baseUrl": "/alerts/agency-updates",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6021"
+		}
 	},
 	{
 		"id": "AlertsByTimePeriod",
 		"description": "Displays the number of alerts generated over the last 12 months.",
 		"name": "Alerts By Time Period",
 		"type": "System",
-		"cube": "AlertsByTimePeriod",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135e"
+		},
 		"viewType": [
 			"column",
 			"bar",
 			"line"
 		],
-		"baseUrl": "/alerts/all-alerts"
+		"baseUrl": "/alerts/all-alerts",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6022"
+		}
 	},
 	{
 		"id": "BillsTimePeriod",
 		"description": "Displays the number of alerts generated over the last 12 months.",
 		"name": "Bills by Time Period",
 		"type": "System",
-		"cube": "AlertsByTimePeriod",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135e"
+		},
 		"viewType": [
 			"column",
 			"bar",
 			"line"
 		],
 		"filters": [
-			"alertCategoryBills"
+			{
+				"$oid": "63a26cb410c1291c5baeb718"
+			}
 		],
-		"baseUrl": "/alerts/horizon-scanning"
+		"baseUrl": "/alerts/horizon-scanning",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6023"
+		}
 	},
 	{
 		"id": "RegulatoryChangesTimePeriod",
 		"description": "Displays the number of alerts generated over the last 12 months.",
 		"name": "Regulatory Changes by Time Period",
 		"type": "System",
-		"cube": "AlertsByTimePeriod",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135e"
+		},
 		"viewType": [
 			"column",
 			"bar",
 			"line"
 		],
 		"filters": [
-			"alertCategoryLaws"
+			{
+				"$oid": "63a26cb410c1291c5baeb719"
+			}
 		],
-		"baseUrl": "/alerts/regulatory-changes"
+		"baseUrl": "/alerts/regulatory-changes",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6024"
+		}
 	},
 	{
 		"id": "AgencyUpdatesTimePeriod",
 		"description": "Displays the number of alerts generated over the last 12 months.",
 		"name": "Agency Updates by Time Period",
 		"type": "System",
-		"cube": "AlertsByTimePeriod",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af135e"
+		},
 		"viewType": [
 			"column",
 			"bar",
 			"line"
 		],
 		"filters": [
-			"alertCategoryNews"
+			{
+				"$oid": "63a26cb410c1291c5baeb71a"
+			}
 		],
-		"baseUrl": "/alerts/agency-updates"
+		"baseUrl": "/alerts/agency-updates",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6025"
+		}
 	},
 	{
 		"id": "AlertsByOwners",
@@ -184,9 +272,15 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByOwners",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1362"
+		},
 		"defaultTimeFilter": "Last 90 days",
-		"baseUrl": "/alerts/all-alerts"
+		"baseUrl": "/alerts/all-alerts",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6026"
+		}
 	},
 	{
 		"id": "BillsOwner",
@@ -197,12 +291,20 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByOwners",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1362"
+		},
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			"alertCategoryOwnersBills"
+			{
+				"$oid": "63a26cb410c1291c5baeb71c"
+			}
 		],
-		"baseUrl": "/alerts/horizon-scanning"
+		"baseUrl": "/alerts/horizon-scanning",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6027"
+		}
 	},
 	{
 		"id": "RegulatoryChangesOwner",
@@ -213,12 +315,20 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByOwners",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1362"
+		},
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			"alertCategoryOwnersLaws"
+			{
+				"$oid": "63a26cb410c1291c5baeb71d"
+			}
 		],
-		"baseUrl": "/alerts/regulatory-changes"
+		"baseUrl": "/alerts/regulatory-changes",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6028"
+		}
 	},
 	{
 		"id": "AgencyUpdatesOwner",
@@ -229,12 +339,20 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByOwners",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1362"
+		},
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			"alertCategoryOwnersNews"
+			{
+				"$oid": "63a26cb410c1291c5baeb71e"
+			}
 		],
-		"baseUrl": "/alerts/agency-updates"
+		"baseUrl": "/alerts/agency-updates",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6029"
+		}
 	},
 	{
 		"id": "AlertsByAgency",
@@ -246,9 +364,15 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByAgency",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1361"
+		},
 		"defaultTimeFilter": "Last 30 days",
-		"baseUrl": "/alerts/all-alerts"
+		"baseUrl": "/alerts/all-alerts",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d602a"
+		}
 	},
 	{
 		"id": "BillsAgency",
@@ -258,11 +382,19 @@
 		"viewType": [
 			"table"
 		],
-		"cube": "AlertsByAgency",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1361"
+		},
 		"defaultTimeFilter": "Last 30 days",
 		"filters": [
-			"alertCategoryBills"
-		]
+			{
+				"$oid": "63a26cb410c1291c5baeb718"
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d602b"
+		}
 	},
 	{
 		"id": "RegulatoryChangesAgency",
@@ -274,12 +406,20 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByAgency",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1361"
+		},
 		"defaultTimeFilter": "Last 30 days",
 		"filters": [
-			"alertCategoryLaws"
+			{
+				"$oid": "63a26cb410c1291c5baeb719"
+			}
 		],
-		"baseUrl": "/alerts/regulatory-changes"
+		"baseUrl": "/alerts/regulatory-changes",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d602c"
+		}
 	},
 	{
 		"id": "AgencyUpdatesAgency",
@@ -291,12 +431,20 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByAgency",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1361"
+		},
 		"defaultTimeFilter": "Last 30 days",
 		"filters": [
-			"alertCategoryNews"
+			{
+				"$oid": "63a26cb410c1291c5baeb71a"
+			}
 		],
-		"baseUrl": ""
+		"baseUrl": "",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d602d"
+		}
 	},
 	{
 		"id": "AgencyUpdatesAgencyFeed",
@@ -306,9 +454,15 @@
 		"viewType": [
 			"table"
 		],
-		"cube": "AgencyUpdatesAgencyFeed",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1363"
+		},
 		"defaultTimeFilter": "Last 4 quarters",
-		"baseUrl": ""
+		"baseUrl": "",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d602e"
+		}
 	},
 	{
 		"id": "BillsJurisdictionStatus",
@@ -321,9 +475,15 @@
 			"map",
 			"table"
 		],
-		"cube": "BillsJurisdictionStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1365"
+		},
 		"defaultTimeFilter": "Last 90 days",
-		"baseUrl": ""
+		"baseUrl": "",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d602f"
+		}
 	},
 	{
 		"id": "AlertsJurisdictionDocumentStatus",
@@ -336,14 +496,28 @@
 			"bar"
 		],
 		"dropDownFilters": [
-			"alertCategoryAll",
-			"alertCategoryBills",
-			"alertCategoryLaws",
-			"alertCategoryNews"
+			{
+				"$oid": "63a26cb410c1291c5baeb717"
+			},
+			{
+				"$oid": "63a26cb410c1291c5baeb718"
+			},
+			{
+				"$oid": "63a26cb410c1291c5baeb719"
+			},
+			{
+				"$oid": "63a26cb410c1291c5baeb71a"
+			}
 		],
-		"cube": "AlertsJurisdictionDocumentStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1366"
+		},
 		"defaultTimeFilter": "Last 90 days",
-		"baseUrl": ""
+		"baseUrl": "",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6030"
+		}
 	},
 	{
 		"id": "BillsDocStatus",
@@ -355,9 +529,15 @@
 			"table",
 			"bar"
 		],
-		"cube": "BillsDocStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1367"
+		},
 		"defaultTimeFilter": "Last 90 days",
-		"baseUrl": ""
+		"baseUrl": "",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6031"
+		}
 	},
 	{
 		"id": "EnforcementActionReport",
@@ -368,9 +548,15 @@
 			"pie",
 			"table"
 		],
-		"cube": "EnforcementActionReport",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1368"
+		},
 		"defaultTimeFilter": "Last 90 days",
-		"baseUrl": "/alerts/enforcement-actions"
+		"baseUrl": "/alerts/enforcement-actions",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6032"
+		}
 	},
 	{
 		"id": "PenaltiesAndRestitutions",
@@ -382,9 +568,15 @@
 			"bar",
 			"table"
 		],
-		"cube": "PenaltiesAndRestitutions",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1369"
+		},
 		"defaultTimeFilter": "Last 4 quarters",
-		"baseUrl": "/alerts/enforcement-actions"
+		"baseUrl": "/alerts/enforcement-actions",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6033"
+		}
 	},
 	{
 		"id": "ActionsByAgency",
@@ -395,9 +587,15 @@
 			"column",
 			"table"
 		],
-		"cube": "ActionsByAgency",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af136a"
+		},
 		"defaultTimeFilter": "Last 90 days",
-		"baseUrl": "/alerts/enforcement-actions"
+		"baseUrl": "/alerts/enforcement-actions",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6034"
+		}
 	},
 	{
 		"id": "NoOfEnforcementActions",
@@ -410,9 +608,15 @@
 			"pie",
 			"table"
 		],
-		"cube": "NoOfEnforcementActions",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af136b"
+		},
 		"defaultTimeFilter": "Last 4 quarters",
-		"baseUrl": "/alerts/enforcement-actions"
+		"baseUrl": "/alerts/enforcement-actions",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6035"
+		}
 	},
 	{
 		"id": "AuthoritativeDocumentsImpacted",
@@ -422,75 +626,111 @@
 		"viewType": [
 			"table"
 		],
-		"cube": "AuthoritativeDocumentsImpacted",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af136c"
+		},
 		"defaultTimeFilter": "Last 4 quarters",
-		"baseUrl": "/alerts/enforcement-actions"
+		"baseUrl": "/alerts/enforcement-actions",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6036"
+		}
 	},
 	{
 		"id": "RisksByStatus",
 		"description": "Provides a holistic view of all the risks along with their assigned status.",
 		"name": "Risks by Status",
 		"type": "System",
-		"cube": "RisksByStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af136d"
+		},
 		"viewType": [
 			"bar",
 			"column",
 			"pie"
 		],
-		"baseUrl": "/risks"
+		"baseUrl": "/risks",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6037"
+		}
 	},
 	{
 		"id": "ControlsByStatus",
 		"description": "Provides a holistic view of all the controls along with their assigned status.",
 		"name": "Controls by Status",
 		"type": "System",
-		"cube": "ControlsByStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af136e"
+		},
 		"viewType": [
 			"bar",
 			"column",
 			"pie"
 		],
-		"baseUrl": "/controls"
+		"baseUrl": "/controls",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6038"
+		}
 	},
 	{
 		"id": "TasksByStatus",
 		"description": "Provides a holistic view of all the tasks along with their assigned status.",
 		"name": "Tasks by Status",
 		"type": "System",
-		"cube": "TasksByStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af136f"
+		},
 		"viewType": [
 			"bar",
 			"column",
 			"pie"
 		],
-		"baseUrl": "/tasks"
+		"baseUrl": "/tasks",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6039"
+		}
 	},
 	{
 		"id": "OwnersOfRisksControlsTasks",
 		"description": "Shows the total number of Risks, Controls, and Tasks owned by each owner.",
 		"name": "Owners of Risks, Controls & Tasks",
 		"type": "System",
-		"cube": "OwnersOfRisksControlsTasks",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1370"
+		},
 		"viewType": [
 			"pie",
 			"bar",
 			"column",
 			"table"
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d603a"
+		}
 	},
 	{
 		"id": "TasksOverdue",
 		"description": "Displays the total number of tasks overdue as well as the amount of time overdue.",
 		"name": "Tasks Overdue",
 		"type": "System",
-		"cube": "TasksOverdue",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1371"
+		},
 		"viewType": [
 			"column",
 			"bar",
 			"pie",
 			"table"
 		],
-		"baseUrl": "/tasks"
+		"baseUrl": "/tasks",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d603b"
+		}
 	},
 	{
 		"id": "ImpactAssessmentByOwners",
@@ -498,37 +738,55 @@
 		"name": "Impact Assessment by Owners",
 		"type": "System",
 		"defaultTimeFilter": "Last 90 days",
-		"cube": "ImpactAssessmentByOwners",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1373"
+		},
 		"viewType": [
 			"pie",
 			"column",
 			"table"
 		],
-		"baseUrl": "/alerts/impact-assessment"
+		"baseUrl": "/alerts/impact-assessment",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d603c"
+		}
 	},
 	{
 		"id": "ImpactAssessmentByStatus",
 		"description": "Displays the number of impact assessments by status over the last 12 months.",
 		"name": "Impact Assessment by Status",
 		"type": "System",
-		"cube": "ImpactAssessmentByStatus",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1375"
+		},
 		"viewType": [
 			"line",
 			"column"
 		],
-		"baseUrl": "/alerts/impact-assessment"
+		"baseUrl": "/alerts/impact-assessment",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d603d"
+		}
 	},
 	{
 		"id": "ImpactAssessmentByImpactLevel",
 		"description": "Displays the number of impact assessments by impact level over the last 12 months.",
 		"name": "Impact Assessment by Impact Level",
 		"type": "System",
-		"cube": "ImpactAssessmentByImpactLevel",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1374"
+		},
 		"viewType": [
 			"line",
 			"column"
 		],
-		"baseUrl": "/alerts/impact-assessment"
+		"baseUrl": "/alerts/impact-assessment",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d603e"
+		}
 	},
 	{
 		"id": "ImpactAssessmentByImpactedTeam",
@@ -536,13 +794,19 @@
 		"name": "Impact Assessment by Impacted Team",
 		"type": "System",
 		"defaultTimeFilter": "Last 90 days",
-		"cube": "ImpactAssessmentByImpactedTeam",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1376"
+		},
 		"viewType": [
 			"pie",
 			"column",
 			"table"
 		],
-		"baseUrl": "/alerts/impact-assessment"
+		"baseUrl": "/alerts/impact-assessment",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d603f"
+		}
 	},
 	{
 		"id": "AlertsByGroup",
@@ -553,9 +817,15 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByGroups",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1372"
+		},
 		"defaultTimeFilter": "Last 90 days",
-		"baseUrl": ""
+		"baseUrl": "/alerts/all-alerts",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6040"
+		}
 	},
 	{
 		"id": "BillsGroup",
@@ -566,12 +836,20 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByGroups",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1372"
+		},
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			"alertCategoryGroupsBills"
+			{
+				"$oid": "63a26cb410c1291c5baeb71f"
+			}
 		],
-		"baseUrl": ""
+		"baseUrl": "/alerts/horizon-scanning",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6041"
+		}
 	},
 	{
 		"id": "RegulatoryChangesGroup",
@@ -582,12 +860,20 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByGroups",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1372"
+		},
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			"alertCategoryGroupsLaws"
+			{
+				"$oid": "63a26cb410c1291c5baeb720"
+			}
 		],
-		"baseUrl": ""
+		"baseUrl": "/alerts/regulatory-changes",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6042"
+		}
 	},
 	{
 		"id": "AgencyUpdatesGroup",
@@ -598,12 +884,20 @@
 			"column",
 			"table"
 		],
-		"cube": "AlertsByGroups",
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1372"
+		},
 		"defaultTimeFilter": "Last 90 days",
 		"filters": [
-			"alertCategoryGroupsNews"
+			{
+				"$oid": "63a26cb410c1291c5baeb721"
+			}
 		],
-		"baseUrl": ""
+		"baseUrl": "/alerts/agency-updates",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6043"
+		}
 	},
 	{
 		"id": "ComplianceCoverage",
@@ -614,7 +908,13 @@
 			"table",
 			"map"
 		],
-		"cube": "ComplianceCoverage",
-		"baseUrl": ""
+		"cube": {
+			"$oid": "63a26cbbf3f1dc6322af1377"
+		},
+		"baseUrl": "",
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63a26cbfb6408ada4b2d6044"
+		}
 	}
 ]

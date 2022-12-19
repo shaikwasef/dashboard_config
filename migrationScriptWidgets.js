@@ -1,7 +1,7 @@
 var fs = require('fs');
 
-const cubesCollection = require('./reg_dashboard_cubes_mongo');
-const filtersCollection = require('./reg_dashboard_filters_mongo');
+const cubesCollection = require('./reg_dashboard_cubes');
+const filtersCollection = require('./reg_dashboard_filters');
 const widgetsCollection = require('./reg_dashboard_widgets');
 const { myTenantId } = require('./constants');
 
@@ -44,6 +44,8 @@ updatedWidgetsCollection.filter(item => item["dropDownFilters"]).forEach((item) 
 	return {...item };
 })
 
-fs.writeFile("reg_dashboard_widgets_mongo.json",JSON.stringify(updatedWidgetsCollection),function(err, result) {
+fs.unlinkSync('reg_dashboard_widgets.json');
+
+fs.writeFile("reg_dashboard_widgets.json",JSON.stringify(updatedWidgetsCollection),function(err, result) {
     if(err) console.log('error', err);
 });
