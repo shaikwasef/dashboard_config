@@ -61,7 +61,11 @@
 				"dimension": "AlertsByTopic.publishedDate",
 				"filter": "publishedDate"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa743"
+		}
 	},
 	{
 		"id": "AlertsByTimePeriod",
@@ -113,16 +117,26 @@
 			}
 		],
 		"applicableFilters": [
-			"alertCategoryBills",
-			"alertCategoryLaws",
-			"alertCategoryNews"
+			{
+				"$oid": "639f5af68e2575101cdd2dac"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2dad"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2dae"
+			}
 		],
 		"routerParams": [
 			{
 				"dimension": "AlertsCube.publishedDate.month",
 				"filter": "publishedDate"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa744"
+		}
 	},
 	{
 		"id": "AlertsWorkflowStatus",
@@ -183,9 +197,15 @@
 			}
 		],
 		"applicableFilters": [
-			"alertCategoryBills",
-			"alertCategoryLaws",
-			"alertCategoryNews"
+			{
+				"$oid": "639f5af68e2575101cdd2dac"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2dad"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2dae"
+			}
 		],
 		"routerParams": [
 			{
@@ -204,7 +224,11 @@
 				"dimension": "AlertsCube.applicable",
 				"filter": "status"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa745"
+		}
 	},
 	{
 		"id": "AlertsByCorpus",
@@ -306,7 +330,11 @@
 				"dimension": "AlertsCube.applicable",
 				"filter": "status"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa746"
+		}
 	},
 	{
 		"id": "AlertsByAgency",
@@ -378,9 +406,15 @@
 			}
 		],
 		"applicableFilters": [
-			"alertCategoryBills",
-			"alertCategoryLaws",
-			"alertCategoryNews"
+			{
+				"$oid": "639f5af68e2575101cdd2dac"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2dad"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2dae"
+			}
 		],
 		"routerParams": [
 			{
@@ -400,7 +434,11 @@
 				"dimension": "AlertsCube.applicable",
 				"filter": "status"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa747"
+		}
 	},
 	{
 		"id": "AlertsByOwners",
@@ -472,9 +510,15 @@
 			}
 		],
 		"applicableFilters": [
-			"alertCategoryOwnersBills",
-			"alertCategoryOwnersLaws",
-			"alertCategoryOwnersNews"
+			{
+				"$oid": "639f5af68e2575101cdd2db0"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2db1"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2db2"
+			}
 		],
 		"routerParams": [
 			{
@@ -499,7 +543,11 @@
 				"dimension": "AlertsByOwnersCube.applicable",
 				"filter": "status"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa748"
+		}
 	},
 	{
 		"id": "AgencyUpdatesAgencyFeed",
@@ -569,7 +617,11 @@
 				"dimension": "AlertsCube.publishedDate.quarter",
 				"filter": "publishedDate"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa749"
+		}
 	},
 	{
 		"id": "AlertRulePerJurisdiction",
@@ -629,7 +681,11 @@
 				"entity": "JurisdictionsCube.displayName"
 			}
 		],
-		"applicableFilters": []
+		"applicableFilters": [],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa74a"
+		}
 	},
 	{
 		"id": "BillsJurisdictionStatus",
@@ -709,7 +765,11 @@
 				"dimension": "AlertsCube.applicableBillsCount",
 				"filter": "status"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa74b"
+		}
 	},
 	{
 		"id": "AlertsJurisdictionDocumentStatus",
@@ -799,7 +859,11 @@
 			}
 		],
 		"applicableFilters": [],
-		"routerParams": []
+		"routerParams": [],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa74c"
+		}
 	},
 	{
 		"id": "BillsDocStatus",
@@ -882,7 +946,11 @@
 			}
 		],
 		"applicableFilters": [],
-		"routerParams": []
+		"routerParams": [],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa74d"
+		}
 	},
 	{
 		"id": "EnforcementActionReport",
@@ -970,7 +1038,11 @@
 				"api": "/agency",
 				"filter": "agency"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa74e"
+		}
 	},
 	{
 		"id": "PenaltiesAndRestitutions",
@@ -1045,7 +1117,11 @@
 				"dimension": "EnforcementActionsCube.effectiveDate.quarter",
 				"filter": "effectiveDate"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa74f"
+		}
 	},
 	{
 		"id": "ActionsByAgency",
@@ -1117,7 +1193,11 @@
 				"dimension": "HarmonizedActionTypeCube.harmonizedActionType",
 				"filter": "harmonizedActionType"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa750"
+		}
 	},
 	{
 		"id": "NoOfEnforcementActions",
@@ -1194,7 +1274,11 @@
 				"dimension": "EnforcementActionsCube.effectiveDate.quarter",
 				"filter": "effectiveDate"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa751"
+		}
 	},
 	{
 		"id": "AuthoritativeDocumentsImpacted",
@@ -1259,7 +1343,11 @@
 				"dimension": "EnforcementActionsCube.effectiveDate.quarter",
 				"filter": "effectiveDate"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa752"
+		}
 	},
 	{
 		"id": "RisksByStatus",
@@ -1319,7 +1407,11 @@
 				"dimension": "RisksByStatusCube.riskStatus",
 				"filter": "status"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa753"
+		}
 	},
 	{
 		"id": "ControlsByStatus",
@@ -1377,7 +1469,11 @@
 				"dimension": "ControlsByStatusCube.controlStatus",
 				"filter": "status"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa754"
+		}
 	},
 	{
 		"id": "TasksByStatus",
@@ -1428,7 +1524,11 @@
 				"dimension": "MapStatusCubeTask.status",
 				"filter": "status"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa755"
+		}
 	},
 	{
 		"id": "OwnersOfRisksControlsTasks",
@@ -1516,7 +1616,11 @@
 				"dimension": "MapOwnersCube.controlCount",
 				"route": "/controls"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa756"
+		}
 	},
 	{
 		"id": "TasksOverdue",
@@ -1574,7 +1678,11 @@
 				"dimension": "TasksCube.dueDate",
 				"filter": "dueDate"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa757"
+		}
 	},
 	{
 		"id": "AlertsByGroups",
@@ -1646,11 +1754,21 @@
 			}
 		],
 		"applicableFilters": [
-			"alertCategoryGroupsBills",
-			"alertCategoryGroupsLaws",
-			"alertCategoryGroupsNews"
+			{
+				"$oid": "639f5af68e2575101cdd2db3"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2db4"
+			},
+			{
+				"$oid": "639f5af68e2575101cdd2db5"
+			}
 		],
-		"routerParams": []
+		"routerParams": [],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa758"
+		}
 	},
 	{
 		"id": "ImpactAssessmentByOwners",
@@ -1722,7 +1840,11 @@
 				},
 				"api": "/users"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa759"
+		}
 	},
 	{
 		"id": "ImpactAssessmentByImpactLevel",
@@ -1790,31 +1912,35 @@
 		],
 		"applicableFilters": [],
 		"routerParams": [
-				{
-					"dimension": "ImpactAssessmentCube.startDate",
-					"filter": "startDate"
-				},
-				{
-					"dimension": "ImpactAssessmentCube.noImpact",
-					"filter": "impactLevel"
-				},
-				{
-					"dimension": "ImpactAssessmentCube.low",
-					"filter": "impactLevel"
-				},
-				{
-					"dimension": "ImpactAssessmentCube.medium",
-					"filter": "impactLevel"
-				},
-				{
-					"dimension": "ImpactAssessmentCube.high",
-					"filter": "impactLevel"
-				},
-				{
-					"dimension": "ImpactAssessmentCube.critical",
-					"filter": "impactLevel"
-				}
-		]
+			{
+				"dimension": "ImpactAssessmentCube.startDate",
+				"filter": "startDate"
+			},
+			{
+				"dimension": "ImpactAssessmentCube.noImpact",
+				"filter": "impactLevel"
+			},
+			{
+				"dimension": "ImpactAssessmentCube.low",
+				"filter": "impactLevel"
+			},
+			{
+				"dimension": "ImpactAssessmentCube.medium",
+				"filter": "impactLevel"
+			},
+			{
+				"dimension": "ImpactAssessmentCube.high",
+				"filter": "impactLevel"
+			},
+			{
+				"dimension": "ImpactAssessmentCube.critical",
+				"filter": "impactLevel"
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa75a"
+		}
 	},
 	{
 		"id": "ImpactAssessmentByStatus",
@@ -1887,7 +2013,11 @@
 				"dimension": "ImpactAssessmentCube.closed",
 				"filter": "status"
 			}
-		]
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa75b"
+		}
 	},
 	{
 		"id": "ImpactAssessmentByImpactedTeam",
@@ -1950,10 +2080,14 @@
 		"applicableFilters": [],
 		"routerParams": [
 			{
-      	"dimension": "ImpactAssessmentImpactedTeamCube.impactedTeam",
-      	"filter": "I_E_F_IMPACTED_TEAM"
-    	}
-		]
+				"dimension": "ImpactAssessmentImpactedTeamCube.impactedTeam",
+				"filter": "I_E_F_IMPACTED_TEAM"
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa75c"
+		}
 	},
 	{
 		"id": "ComplianceCoverage",
@@ -2004,6 +2138,10 @@
 			}
 		],
 		"applicableFilters": [],
-		"routerParams": []
+		"routerParams": [],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b72421b8663c0daa75d"
+		}
 	}
 ]
