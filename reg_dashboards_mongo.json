@@ -1,0 +1,707 @@
+[
+	{
+		"id": "AlertsOverview",
+		"category": "Alerts",
+		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+		"name": "Alerts Overview",
+		"type": "System",
+		"order": 1,
+		"widgets": [
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1dee9"
+				},
+				"layout": {
+					"x": 0,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def1"
+				},
+				"layout": {
+					"x": 6,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar",
+					"line"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1deed"
+				},
+				"layout": {
+					"x": 0,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"line",
+					"column"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def5"
+				},
+				"layout": {
+					"x": 6,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1deeb"
+				},
+				"layout": {
+					"x": 0,
+					"y": 4,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def9"
+				},
+				"layout": {
+					"x": 6,
+					"y": 4,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"bar",
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1defe"
+				},
+				"layout": {
+					"x": 0,
+					"y": 6,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar",
+					"map",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1defd"
+				},
+				"layout": {
+					"x": 6,
+					"y": 6,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1deff"
+				},
+				"layout": {
+					"x": 0,
+					"y": 8,
+					"w": 12,
+					"h": 2
+				},
+				"viewType": [
+					"map",
+					"table",
+					"bar"
+				]
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b79d96ad080ee45b549"
+		}
+	},
+	{
+		"id": "BillAlerts",
+		"category": "Alerts",
+		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+		"name": "Bill Alerts",
+		"type": "System",
+		"order": 2,
+		"widgets": [
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def2"
+				},
+				"layout": {
+					"x": 0,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar",
+					"line"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1deee"
+				},
+				"layout": {
+					"x": 6,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"line",
+					"column"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1defe"
+				},
+				"layout": {
+					"x": 0,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar",
+					"map",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def6"
+				},
+				"layout": {
+					"x": 6,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df00"
+				},
+				"layout": {
+					"x": 0,
+					"y": 4,
+					"w": 12,
+					"h": 2
+				},
+				"viewType": [
+					"map",
+					"table",
+					"bar"
+				]
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b79d96ad080ee45b54a"
+		}
+	},
+	{
+		"id": "RegulatoryChange",
+		"category": "Alerts",
+		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+		"name": "Regulatory Changes",
+		"type": "System",
+		"order": 3,
+		"widgets": [
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1deea"
+				},
+				"layout": {
+					"x": 0,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def3"
+				},
+				"layout": {
+					"x": 6,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar",
+					"line"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1deef"
+				},
+				"layout": {
+					"x": 0,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"line",
+					"column"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def7"
+				},
+				"layout": {
+					"x": 6,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1deec"
+				},
+				"layout": {
+					"x": 0,
+					"y": 4,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1defb"
+				},
+				"layout": {
+					"x": 6,
+					"y": 4,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"bar",
+					"column",
+					"table"
+				]
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b79d96ad080ee45b54b"
+		}
+	},
+	{
+		"id": "AgencyUpdate",
+		"category": "Alerts",
+		"description": "Overview of all alerts, including alerts by time period, user, agency, regulation, and more.",
+		"name": "Agency Updates",
+		"type": "System",
+		"order": 4,
+		"widgets": [
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1defc"
+				},
+				"layout": {
+					"x": 0,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"bar",
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def4"
+				},
+				"layout": {
+					"x": 6,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar",
+					"line"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def0"
+				},
+				"layout": {
+					"x": 0,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"line",
+					"column"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1def8"
+				},
+				"layout": {
+					"x": 6,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1defd"
+				},
+				"layout": {
+					"x": 0,
+					"y": 4,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"table"
+				]
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b79d96ad080ee45b54c"
+		}
+	},
+	{
+		"id": "EnforcementActionsOverview",
+		"category": "Enforcement Actions",
+		"description": "Overview of all enforcement actions, including penalties and restitutions, actions by agencies, regulations impacted, and more. ",
+		"name": "Enforcement Actions Overview",
+		"type": "System",
+		"order": 5,
+		"widgets": [
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df01"
+				},
+				"layout": {
+					"x": 0,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"pie",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df04"
+				},
+				"layout": {
+					"x": 0,
+					"y": 2,
+					"w": 12,
+					"h": 2
+				},
+				"viewType": [
+					"bar",
+					"column",
+					"pie",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df02"
+				},
+				"layout": {
+					"x": 0,
+					"y": 4,
+					"w": 12,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df03"
+				},
+				"layout": {
+					"x": 0,
+					"y": 6,
+					"w": 12,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df05"
+				},
+				"layout": {
+					"x": 0,
+					"y": 8,
+					"w": 12,
+					"h": 2
+				},
+				"viewType": [
+					"table"
+				]
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b79d96ad080ee45b54d"
+		}
+	},
+	{
+		"id": "ComplianceDashboard",
+		"category": "Compliance",
+		"description": "Overview of all compliance objects, including Risks, Controls, and Tasks.",
+		"name": "Compliance Overview",
+		"type": "System",
+		"order": 6,
+		"widgets": [
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df06"
+				},
+				"layout": {
+					"x": 0,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"bar",
+					"column",
+					"pie"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df07"
+				},
+				"layout": {
+					"x": 6,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"bar",
+					"column",
+					"pie"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df08"
+				},
+				"layout": {
+					"x": 0,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"bar",
+					"column",
+					"pie"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df09"
+				},
+				"layout": {
+					"x": 6,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"pie",
+					"bar",
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df0a"
+				},
+				"layout": {
+					"x": 0,
+					"y": 4,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"column",
+					"bar",
+					"pie",
+					"table"
+				]
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b79d96ad080ee45b54e"
+		}
+	},
+	{
+		"id": "ImpactAssessmentDashboard",
+		"category": "Impact Assessment",
+		"description": "Overview of all impact assessment, including impact by time period, user and more.",
+		"name": "Impact Assessment Overview",
+		"type": "System",
+		"order": 7,
+		"widgets": [
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df0b"
+				},
+				"layout": {
+					"x": 0,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"pie",
+					"column",
+					"table"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df0c"
+				},
+				"layout": {
+					"x": 6,
+					"y": 0,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"line",
+					"column"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df0d"
+				},
+				"layout": {
+					"x": 0,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"line",
+					"column"
+				]
+			},
+			{
+				"widget": {
+					"$oid": "639f5b7571ffdf8ab2a1df0e"
+				},
+				"layout": {
+					"x": 6,
+					"y": 2,
+					"w": 6,
+					"h": 2
+				},
+				"viewType": [
+					"pie",
+					"column",
+					"table"
+				]
+			}
+		],
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "639f5b79d96ad080ee45b54f"
+		}
+	}
+]
