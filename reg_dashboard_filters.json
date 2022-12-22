@@ -1,0 +1,176 @@
+[
+	{
+		"id": "alertCategoryAll",
+		"name": "i18n_LBL_ALL_ALERTS",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsCube.alertCategory",
+			"operator": "set",
+			"values": []
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac63"
+		}
+	},
+	{
+		"id": "alertCategoryBills",
+		"name": "i18n_LBL_ALERTS_BILLS",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsCube.alertCategory",
+			"operator": "equals",
+			"values": [
+				"Bills"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac64"
+		}
+	},
+	{
+		"id": "alertCategoryLaws",
+		"name": "i18n_LBL_ALERTS_LAWS_AND_REGULATIONS",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsCube.alertCategory",
+			"operator": "equals",
+			"values": [
+				"Laws & Regulations"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac65"
+		}
+	},
+	{
+		"id": "alertCategoryNews",
+		"name": "i18n_LBL_ALERTS_AGENCY_UPDATES",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsCube.alertCategory",
+			"operator": "equals",
+			"values": [
+				"News & Publications"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac66"
+		}
+	},
+	{
+		"id": "alertTopicLaws",
+		"name": "Alert topic : Laws & Regulations",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsByTopic.alertCategory",
+			"operator": "equals",
+			"values": [
+				"Laws & Regulations"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac67"
+		}
+	},
+	{
+		"id": "alertCategoryOwnersBills",
+		"name": "Alert category Owners : Bills",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsByOwnersCube.alertCategory",
+			"operator": "equals",
+			"values": [
+				"Bills"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac68"
+		}
+	},
+	{
+		"id": "alertCategoryOwnersLaws",
+		"name": "Alert category Owners : Laws and Regulations",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsByOwnersCube.alertCategory",
+			"operator": "equals",
+			"values": [
+				"Laws & Regulations"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac69"
+		}
+	},
+	{
+		"id": "alertCategoryOwnersNews",
+		"name": "Alert category Owners: News & Publications",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsByOwnersCube.alertCategory",
+			"operator": "equals",
+			"values": [
+				"News & Publications"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac6a"
+		}
+	},
+	{
+		"id": "alertCategoryGroupsBills",
+		"name": "Alert category Groups : Bills",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsByGroupsCube.alertCategory",
+			"operator": "equals",
+			"values": [
+				"Bills"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac6b"
+		}
+	},
+	{
+		"id": "alertCategoryGroupsLaws",
+		"name": "Alert category Groups : Laws and Regulations",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsByGroupsCube.alertCategory",
+			"operator": "equals",
+			"values": [
+				"Laws & Regulations"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac6c"
+		}
+	},
+	{
+		"id": "alertCategoryGroupsNews",
+		"name": "Alert category Groups: News & Publications",
+		"category": "Alerts",
+		"filter": {
+			"member": "AlertsByGroupsCube.alertCategory",
+			"operator": "equals",
+			"values": [
+				"News & Publications"
+			]
+		},
+		"tenantId": "60bdf4253f08118fcef4f30a",
+		"_id": {
+			"$oid": "63b270fa08d40762fd6dac6d"
+		}
+	}
+]
